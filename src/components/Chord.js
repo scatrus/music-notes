@@ -9,5 +9,10 @@ export default (props) =>
             <option value="MENOR">MENOR</option>
             <option value="MAIOR COM SÉTIMA MENOR">MAIOR COM SÉTIMA MENOR</option>
             <option value="MAIOR COM SÉTIMA MAIOR">MAIOR COM SÉTIMA MAIOR</option>
+            <option value="MENOR COM SÉTIMA MAIOR">MENOR COM SÉTIMA MAIOR</option>
+            <option value="MENOR COM SÉTIMA MENOR">MENOR COM SÉTIMA MENOR</option>
+            <option value="MAIOR COM NONA">MAIOR COM NONA</option>
+            <option value="MENOR COM NONA">MENOR COM NONA</option>
+
         </select>
     </div>

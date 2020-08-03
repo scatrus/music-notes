@@ -9,6 +9,19 @@
       name="description"
       content="♫♪ Learning music ♫♪"
     />
+
+    <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
+    <script src='https://surikov.github.io/webaudiofontdata/sound/0000_Aspirin_sf2_file.js'></script>
+    <script>
+			var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
+			var audioContext = new AudioContextFunc();
+			var player=new WebAudioFontPlayer();
+			player.loader.decodeAfterLoading(audioContext, '_tone_0000_Aspirin_sf2_file');
+			function playKey(pitch){
+        
+				player.queueWaveTable(audioContext, audioContext.destination, _tone_0000_Aspirin_sf2_file, 0, pitch, 1);
+			}
+        </script>
     
     <title>Music Notes</title>
   </head>

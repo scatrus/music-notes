@@ -1,4 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+body {
+  background-color: #444;
+  color: aliceblue;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
+.App {
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  background: #2D9CDB;
+  width: 99vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.App header {
+  padding-top: 2vh;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.head {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 90vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button button {
+  font-size: 5vw;
+}
+
+.button {
+  border-color: 0;
+  padding: 0;
+  margin: 3% 1% 1%;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+  border-color: #db6d2d;
+  color: #db6d2d;
+}
+
+.selected {
+  background: #F2F2F2;
+  border-radius: 3vw;
+  width: 10vw;
+  display: inline-block;
+  color: #db6d2d;
+  margin-top: 2vmax;
+  font-family: 'Roboto', sans-serif;
+  padding: 3vw;
+}
+
+select {
+  margin-top: 2vmax;
+  width: 90vw;
+  font-size: 2vmax;
+  text-align: center;
+  text-align-last: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.result {
+  margin:2vw auto 0;
+  display: block;
+  justify-content: center;
+  width: 90vw;
+  
+}
+
+.result button {
+  background-color: #1c5891;
+  width: 7vmax;
+  height: 5vmax;
+  font-size: 4vw;
+  color: white;
+  font-weight: bold;
+
+}
+
+
+h3 {
+  font-size: 3vw;
+  margin: auto;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+span {
+  font-size: 3vw;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  
+}
+
+.selected span {
+  font-weight: bold;
+  font-size: 6vw;
+  color: #db6d2d;
+  font-family: 'Roboto', sans-serif;
+}
+
+.note{
+  width: 8vmax;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.resultNotes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sound{
+  background-color: #e2f5fd;
+  color: black;
+  font-size: 3vw;
+  width: max-content;
+  margin: 0 auto 2vw;
+}
+
+.sound:hover, select:hover, button:hover{
+  cursor: pointer;
+}
+
+.player{
+  display: flex;
+  }
+
+.option button{
+  text-align: center;
+  padding: 5px;
+  margin: 3px 4px;
+}

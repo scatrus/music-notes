@@ -12,22 +12,20 @@ function App() {
 
   const [note, setNote] = useState('C')
   const [scale, setScale] = useState('JÔNICO')
-  const [chord, setChord] = useState('MAIOR')
+  const [chord, setChord] = useState('M')
   const [option, setOption] = useState('ACORDES')
 
   var sub = Note.slice(0, 12)
-  
+
   return (
     <div className="App">
 
-      <header>FORMAÇÃO DE ESCALAS E ACORDES</header>
-
-      <div className="option">
-      <button value="escalas" onClick={()=>setOption("ESCALAS")} >Escalas</button>
-      <button value="acordes" onClick={()=>setOption("ACORDES")} autoFocus>Acordes</button>
-
-      </div>
-
+      <header>
+        <div className="option">
+          <button value="escalas" onClick={() => setOption("ESCALAS")} >ESCALAS</button>
+          <button value="acordes" onClick={() => setOption("ACORDES")} autoFocus>ACORDES</button>
+        </div>
+      </header>
 
       <div className="head">
 
@@ -38,16 +36,16 @@ function App() {
       </div>
 
       <Selected note={note} />
-      
-          {option === "ESCALAS"?<>
-          <Scale setScale={setScale} />
-          <ResultScale Tonica={note} Scale={scale} /></>
-          :<>
+
+      {option === "ESCALAS" ? <>
+        <Scale setScale={setScale} />
+        <ResultScale Tonica={note} Scale={scale} /></>
+        : <>
           <Chord setChord={setChord} />
           <ResultChord Tonica={note} chord={chord} />
-          </>
-          }
-      
+        </>
+      }
+
     </div>
 
   );

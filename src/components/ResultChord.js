@@ -30,7 +30,7 @@ export default props => {
     return (
         <div className="result">
 
-            {props.chord === "MAIOR" ? <>
+            {props.chord === "M" ? <>
                 <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
@@ -56,7 +56,7 @@ export default props => {
                 : <></>
             }
 
-            {props.chord === "MENOR" ? <>
+            {props.chord === "m" ? <>
 
                 <div className="player">
                     <div className="sound" onClick={() =>
@@ -83,7 +83,7 @@ export default props => {
                 : <></>
             }
 
-            {props.chord === "MAIOR COM SÉTIMA MENOR" ? <>
+            {props.chord === "M7" ? <>
 
                 <div className="player">
                     <div className="sound" onClick={() =>
@@ -114,7 +114,7 @@ export default props => {
                 : <></>
             }
 
-            {props.chord === "MAIOR COM SÉTIMA MAIOR" ? <>
+            {props.chord === "M7M" ? <>
 
 
 
@@ -147,7 +147,7 @@ export default props => {
                 : <></>
             }
 
-            {props.chord === "MENOR COM SÉTIMA MAIOR" ? <>
+            {props.chord === "m7M" ? <>
 
 
 
@@ -180,7 +180,7 @@ export default props => {
                 : <></>
             }
 
-            {props.chord === "MENOR COM SÉTIMA MENOR" ? <>
+            {props.chord === "m7" ? <>
 
 
 
@@ -213,7 +213,7 @@ export default props => {
                 : <></>
             }
 
-{props.chord === "MAIOR COM NONA" ? <>
+{props.chord === "M9" ? <>
 
 <div className="player">
     <div className="sound" onClick={() =>
@@ -244,7 +244,7 @@ export default props => {
 : <></>
 }
 
-{props.chord === "MENOR COM NONA" ? <>
+{props.chord === "m9" ? <>
 
 <div className="player">
     <div className="sound" onClick={() =>

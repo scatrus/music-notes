@@ -148,4 +148,14 @@ h3 {
   text-align: center;
   padding: 5px;
   margin: 3px 4px;
+  font-size: large;
+}
+
+.chord button, .scale button{
+  padding: 5px;
+  height: 5%;
+  margin: 2% 1vw 0;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }

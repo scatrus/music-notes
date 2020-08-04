@@ -56,13 +56,13 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 2)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 4)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 9)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 11)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
+                        setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 11)),1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)),1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
@@ -104,13 +104,13 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 2)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 9)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 10)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
@@ -152,31 +152,31 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 1)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 8)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 10)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 1)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 8)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
                 <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
+                    <span>ST</span>
                     <div><Note note={b2} /><h3>2ª</h3></div>
                     <span>T</span>
                     <div><Note note={b4} /><h3>3ª</h3></div>
-                    <span>ST</span>
+                    <span>T</span>
                     <div><Note note={b6} /><h3>4ª</h3></div>
                     <span>T</span>
                     <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>T</span>
+                    <span>ST</span>
                     <div><Note note={b9} /><h3>6ª</h3></div>
                     <span>T</span>
                     <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>ST</span>
+                    <span>T</span>
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
@@ -200,13 +200,13 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 2)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 4)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 6)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 9)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 11)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 6)), 600)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 11)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
@@ -216,9 +216,9 @@ export default props => {
                     <div><Note note={b3} /><h3>2ª</h3></div>
                     <span>T</span>
                     <div><Note note={b5} /><h3>3ª</h3></div>
-                    <span>ST</span>
-                    <div><Note note={b7} /><h3>4ª</h3></div>
                     <span>T</span>
+                    <div><Note note={b7} /><h3>4ª</h3></div>
+                    <span>ST</span>
                     <div><Note note={b8} /><h3>5ª</h3></div>
                     <span>T</span>
                     <div><Note note={b10} /><h3>6ª</h3></div>
@@ -248,13 +248,13 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 2)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 4)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 9)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 10)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
@@ -270,9 +270,9 @@ export default props => {
                     <div><Note note={b8} /><h3>5ª</h3></div>
                     <span>T</span>
                     <div><Note note={b10} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b11} /><h3>7ª</h3></div>
                     <span>ST</span>
+                    <div><Note note={b11} /><h3>7ª</h3></div>
+                    <span>T</span>
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
@@ -296,13 +296,13 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 2)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 8)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 10)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 8)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
@@ -310,17 +310,17 @@ export default props => {
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b3} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b4} /><h3>3ª</h3></div>
                     <span>ST</span>
+                    <div><Note note={b4} /><h3>3ª</h3></div>
+                    <span>T</span>
                     <div><Note note={b6} /><h3>4ª</h3></div>
                     <span>T</span>
                     <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>T</span>
+                    <span>ST</span>
                     <div><Note note={b9} /><h3>6ª</h3></div>
                     <span>T</span>
                     <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>ST</span>
+                    <span>T</span>
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
@@ -344,31 +344,31 @@ export default props => {
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
-                        setTimeout(() => playKey(4 * 12 + (N + 1)), 50) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 100) &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 150) &
-                        setTimeout(() => playKey(4 * 12 + (N + 6)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 8)), 250) &
-                        setTimeout(() => playKey(4 * 12 + (N + 10)), 300) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)), 350)}>
+                        setTimeout(() => playKey(4 * 12 + (N + 1)), 200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 6)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 8)), 1000) &
+                        setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
                         <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
                 </div>
 
                 <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
+                    <span>ST</span>
                     <div><Note note={b2} /><h3>2ª</h3></div>
                     <span>T</span>
                     <div><Note note={b4} /><h3>3ª</h3></div>
-                    <span>ST</span>
-                    <div><Note note={b6} /><h3>4ª</h3></div>
                     <span>T</span>
+                    <div><Note note={b6} /><h3>4ª</h3></div>
+                    <span>ST</span>
                     <div><Note note={b7} /><h3>5ª</h3></div>
                     <span>T</span>
                     <div><Note note={b9} /><h3>6ª</h3></div>
                     <span>T</span>
                     <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>ST</span>
+                    <span>T</span>
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>

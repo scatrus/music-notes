@@ -4,6 +4,8 @@ import Notes from '../data/notes'
 import { FiPlayCircle } from 'react-icons/fi'
 
 export default props => {
+
+
     /* eslint-disable */
     const result = Notes.find(n1 => n1.note === props.Tonica);
 

@@ -31,21 +31,21 @@ export default props => {
         <div className="result">
 
             {props.chord === "M" ? <>
-                <div className="player">
+            <div className="resultNotes">
+                
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 4)) &
                         playKey(4 * 12 + (N + 7))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 4)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1000)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+               
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>2T</span>
                     <div><Note note={b3M} /><h3>3M</h3></div>
@@ -57,22 +57,21 @@ export default props => {
             }
 
             {props.chord === "m" ? <>
+            <div className="resultNotes">
 
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 3)) &
                         playKey(4 * 12 + (N + 7))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 3)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1000)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>3ST</span>
                     <div><Note note={b3m} /><h3>3m</h3></div>
@@ -84,24 +83,23 @@ export default props => {
             }
 
             {props.chord === "7" ? <>
+            <div className="resultNotes">
 
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 4)) &
                         playKey(4 * 12 + (N + 7)) &
                         playKey(4 * 12 + (N + 10))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 4)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>2T</span>
                     <div><Note note={b3M} /><h3>3M</h3></div>
@@ -115,26 +113,23 @@ export default props => {
             }
 
             {props.chord === "7M" ? <>
+            <div className="resultNotes">
 
-
-
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 4)) &
                         playKey(4 * 12 + (N + 7)) &
                         playKey(4 * 12 + (N + 11))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 4)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 11)), 1500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>2T</span>
                     <div><Note note={b3M} /><h3>3M</h3></div>
@@ -149,25 +144,24 @@ export default props => {
 
             {props.chord === "m7M" ? <>
 
+            <div className="resultNotes">
 
 
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 3)) &
                         playKey(4 * 12 + (N + 7)) &
                         playKey(4 * 12 + (N + 11))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 3)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 11)), 1500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>2T</span>
                     <div><Note note={b3m} /><h3>3m</h3></div>
@@ -182,25 +176,24 @@ export default props => {
 
             {props.chord === "m7" ? <>
 
+            <div className="resultNotes">
 
 
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 3)) &
                         playKey(4 * 12 + (N + 7)) &
                         playKey(4 * 12 + (N + 10))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 3)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+               
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>2T</span>
                     <div><Note note={b3m} /><h3>3m</h3></div>
@@ -214,24 +207,23 @@ export default props => {
             }
 
             {props.chord === "9" ? <>
+            <div className="resultNotes">
 
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 2)) &
                         playKey(4 * 12 + (N + 4)) &
                         playKey(4 * 12 + (N + 7))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 4)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b9} /><h3>9</h3></div>
@@ -245,24 +237,23 @@ export default props => {
             }
 
             {props.chord === "m9" ? <>
+            <div className="resultNotes">
 
-                <div className="player">
                     <div className="sound" onClick={() =>
                         playKey(4 * 12 + (N)) &
                         playKey(4 * 12 + (N + 2)) &
                         playKey(4 * 12 + (N + 3)) &
                         playKey(4 * 12 + (N + 7))}>
-                        <FiPlayCircle size={'2vw'} />Tocar acorde</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                         setTimeout(() => playKey(4 * 12 + (N + 3)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 1500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b9} /><h3>9</h3></div>

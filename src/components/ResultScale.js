@@ -41,8 +41,8 @@ export default props => {
         <div className="result">
 
             {props.Scale === "JÔNICO" ? <>
-                <div className="player">
 
+                <div className="resultNotes">
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
@@ -52,7 +52,7 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 11)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
@@ -61,12 +61,12 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
                         setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
-                        setTimeout(() => playKey(4 * 12 + (N + 11)),1200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 12)),1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
+                        setTimeout(() => playKey(4 * 12 + (N + 11)), 1200) &
+                        setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
+                        <FiPlayCircle size={'2vw'} /></div>
 
-                <div className="resultNotes">
+
+
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b3} /><h3>2ª</h3></div>
@@ -89,8 +89,9 @@ export default props => {
             }
 
             {props.Scale === "DÓRICO" ? <>
-                <div className="player">
+               
 
+            <div className="resultNotes">
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
@@ -100,21 +101,20 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b3} /><h3>2ª</h3></div>
@@ -137,7 +137,8 @@ export default props => {
             }
 
             {props.Scale === "FRÍGIO" ? <>
-                <div className="player">
+               
+                <div className="resultNotes">
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
@@ -148,21 +149,20 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 8)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 1)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 8)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>ST</span>
                     <div><Note note={b2} /><h3>2ª</h3></div>
@@ -185,7 +185,8 @@ export default props => {
             }
 
             {props.Scale === "LÍDIO" ? <>
-                <div className="player">
+                
+                <div className="resultNotes">
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
@@ -196,21 +197,20 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 11)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 6)), 600)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 6)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 11)), 1200) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b3} /><h3>2ª</h3></div>
@@ -233,7 +233,8 @@ export default props => {
             }
 
             {props.Scale === "MIXOLÍDIO" ? <>
-                <div className="player">
+               
+            <div className="resultNotes">
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
@@ -244,21 +245,20 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 4)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 9)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+                
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b3} /><h3>2ª</h3></div>
@@ -281,7 +281,8 @@ export default props => {
             }
 
             {props.Scale === "EÓLICO" ? <>
-                <div className="player">
+               
+            <div className="resultNotes">
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
@@ -292,21 +293,19 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 8)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 2)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 7)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 8)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
-
-                <div className="resultNotes">
+                        <FiPlayCircle size={'2vw'} /></div>
+                
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>T</span>
                     <div><Note note={b3} /><h3>2ª</h3></div>
@@ -329,7 +328,8 @@ export default props => {
             }
 
             {props.Scale === "LÓCRIO" ? <>
-                <div className="player">
+                
+            <div className="resultNotes">
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
@@ -340,21 +340,20 @@ export default props => {
                         setTimeout(() => playKey(4 * 12 + (N + 8)), 2500) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 3000) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 3500)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo lento</div>
+                        <FiPlayCircle size={'2vw'} /></div>
 
                     <div className="sound" onClick={() => setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                         setTimeout(() => playKey(4 * 12 + (N + 1)), 200) &
-                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600)  &
-                        setTimeout(() => playKey(4 * 12 + (N + 6)), 800)  &
+                        setTimeout(() => playKey(4 * 12 + (N + 3)), 400) &
+                        setTimeout(() => playKey(4 * 12 + (N + 5)), 600) &
+                        setTimeout(() => playKey(4 * 12 + (N + 6)), 800) &
                         setTimeout(() => playKey(4 * 12 + (N + 8)), 1000) &
                         setTimeout(() => playKey(4 * 12 + (N + 10)), 1200) &
                         setTimeout(() => playKey(4 * 12 + (N + 12)), 1400)}>
-                        <FiPlayCircle size={'2vw'} />Tocar arpejo rápido</div>
-                </div>
+                        <FiPlayCircle size={'2vw'} /></div>
+              
 
-                <div className="resultNotes">
                     <div><Note note={bT} /><h3>T</h3></div>
                     <span>ST</span>
                     <div><Note note={b2} /><h3>2ª</h3></div>

@@ -121,20 +121,18 @@ h3 {
 }
 
 .sound{
-  background-color: #e2f5fd;
+  /* background-color: #e2f5fd; */
   color: black;
   font-size: 3vw;
   width: max-content;
-  margin: 0 auto 2vw;
+  height: max-content;
+  margin: 0 2px 2vw;
 }
 
 .sound:hover, select:hover, button:hover{
   cursor: pointer;
 }
 
-.player{
-  display: flex;
-  }
 
 .option{
   margin: 0 auto 2vh;

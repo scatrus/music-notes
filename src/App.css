@@ -42,6 +42,7 @@ body {
   margin-top: 2vmax;
   font-family: 'Roboto', sans-serif;
   padding: 2vw;
+  cursor: pointer;
 }
 
 .selected span {

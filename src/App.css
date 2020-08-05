@@ -12,9 +12,9 @@ body {
   align-content: center;
   text-align: center;
   background: #2D9CDB;
-  width: 99vw;
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0 auto 0;
 }
 
 .App header {
@@ -33,22 +33,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.button button {
-  font-size: 5vw;
-}
-
-.button {
-  border-color: 0;
-  padding: 0;
-  margin: 3% 1% 1%;
-  font-family: 'Roboto', sans-serif;
-}
-
-button:focus {
-  border-color: #db6d2d;
-  color: #db6d2d;
-}
-
 .selected {
   background: #F2F2F2;
   border-radius: 3vw;
@@ -57,17 +41,17 @@ button:focus {
   color: #db6d2d;
   margin-top: 2vmax;
   font-family: 'Roboto', sans-serif;
-  padding: 3vw;
+  padding: 2vw;
 }
 
-select {
-  margin-top: 2vmax;
-  width: 90vw;
-  font-size: 2vmax;
-  text-align: center;
-  text-align-last: center;
+.selected span {
+  font-weight: bold;
+  font-size: 6vw;
+  color: #db6d2d;
   font-family: 'Roboto', sans-serif;
+  
 }
+
 
 .result {
   margin:2vw auto 0;
@@ -77,16 +61,28 @@ select {
   
 }
 
-.result button {
+button {
   background-color: #1c5891;
-  width: 7vmax;
-  height: 5vmax;
+  width: max-content;
+  height: max-content;
   font-size: 4vw;
   color: white;
   font-weight: bold;
-
 }
 
+.head button{
+  background-color: chocolate;
+}
+
+.head button:focus{
+  border-color: #db6d2d;
+  color: black;
+}
+
+button:focus {
+  border-color: #db6d2d;
+  color: #db6d2d;
+}
 
 h3 {
   font-size: 3vw;
@@ -97,35 +93,31 @@ h3 {
 
 .result span {
   font-size: 3vw;
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
-  background-color: #db6d2d;
+  margin: 0 0;
+  /* background-color: #db6d2d; */
   height: max-content;
-  padding: 6px;
-  border-radius: 6px;
-  
-}
+  width: max-content;
+  padding: 10px;
+  border-radius: 4%;
+  }
 
-.selected span {
-  font-weight: bold;
-  font-size: 6vw;
-  color: #db6d2d;
-  font-family: 'Roboto', sans-serif;
-  
 
-  
-}
 
 .note{
-  width: 8vmax;
+  width: max-content;
   font-family: 'Roboto', sans-serif;
+  margin: 0 0;
 
 }
 
 .resultNotes{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .sound{
@@ -144,18 +136,6 @@ h3 {
   display: flex;
   }
 
-.option button{
-  text-align: center;
-  padding: 5px;
-  margin: 3px 4px;
-  font-size: large;
-}
-
-.chord button, .scale button{
-  padding: 5px;
-  height: 5%;
-  margin: 2% 1vw 0;
-  font-size: large;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+.option{
+  margin: 0 auto 2vh;
 }

@@ -42,7 +42,7 @@ function App() {
         <ResultScale Tonica={note} Scale={scale} /></>
         : <>
           <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note}/>
-          <Selected note={selectedNote} />
+          <Selected Tonica={note} note={selectedNote} chord={chord} Scale={scale}/>
           <ResultChord Tonica={note} chord={chord} />
         </>
       }

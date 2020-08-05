@@ -11,6 +11,7 @@ import ResultScale from './components/ResultScale';
 function App() {
 
   const [note, setNote] = useState('C')
+  const [selectedNote, setSelectedNote] = useState('C')
   const [scale, setScale] = useState('JÔNICO')
   const [chord, setChord] = useState('M')
   const [option, setOption] = useState('ACORDES')
@@ -30,18 +31,18 @@ function App() {
       <div className="head">
 
         {sub.map((v) => (
-          <Button key={v.note} note={v.note} setNote={setNote} />
+          <Button key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} />
         ))}
 
       </div>
 
-      <Selected note={note} />
-
       {option === "ESCALAS" ? <>
         <Scale setScale={setScale} />
+        <Selected note={selectedNote} />
         <ResultScale Tonica={note} Scale={scale} /></>
         : <>
-          <Chord setChord={setChord} />
+          <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note} />
+          <Selected note={selectedNote} />
           <ResultChord Tonica={note} chord={chord} />
         </>
       }

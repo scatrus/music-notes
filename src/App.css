@@ -52,7 +52,7 @@ button:focus {
 .selected {
   background: #F2F2F2;
   border-radius: 3vw;
-  width: 10vw;
+  width: max-content;
   display: inline-block;
   color: #db6d2d;
   margin-top: 2vmax;

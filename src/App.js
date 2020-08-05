@@ -38,11 +38,11 @@ function App() {
 
       {option === "ESCALAS" ? <>
         <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note}/>
-        <Selected note={selectedNote} />
+        <Selected note={selectedNote} Tonica={note} Scale={scale} />
         <ResultScale Tonica={note} Scale={scale} /></>
         : <>
           <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note}/>
-          <Selected Tonica={note} note={selectedNote} chord={chord} Scale={scale}/>
+          <Selected Tonica={note} note={selectedNote} chord={chord}/>
           <ResultChord Tonica={note} chord={chord} />
         </>
       }

@@ -37,11 +37,11 @@ function App() {
       </div>
 
       {option === "ESCALAS" ? <>
-        <Scale setScale={setScale} />
+        <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note}/>
         <Selected note={selectedNote} />
         <ResultScale Tonica={note} Scale={scale} /></>
         : <>
-          <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note} />
+          <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note}/>
           <Selected note={selectedNote} />
           <ResultChord Tonica={note} chord={chord} />
         </>

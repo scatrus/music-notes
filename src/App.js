@@ -28,7 +28,7 @@ function App() {
         </div>
       </header>
 
-      <div className="head">
+      <div className="notes">
 
         {sub.map((v) => (
           <Button key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} />

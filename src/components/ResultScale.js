@@ -34,19 +34,14 @@ export default props => {
 
 
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
-                    <div><Note note={b3} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b5} /><h3>3ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b3} /><h3>2ª</h3></div>
+                                        <div><Note note={b5} /><h3>3ª</h3></div>
+                    
                     <div><Note note={b6} /><h3>4ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b10} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b12} /><h3>7ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b8} /><h3>5ª</h3></div>
+                                        <div><Note note={b10} /><h3>6ª</h3></div>
+                                        <div><Note note={b12} /><h3>7ª</h3></div>
+                    
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
@@ -61,19 +56,14 @@ export default props => {
                                     
 
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
-                    <div><Note note={b3} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b4} /><h3>3ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b3} /><h3>2ª</h3></div>
+                                        <div><Note note={b4} /><h3>3ª</h3></div>
+                    
                     <div><Note note={b6} /><h3>4ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b10} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b8} /><h3>5ª</h3></div>
+                                        <div><Note note={b10} /><h3>6ª</h3></div>
+                                        <div><Note note={b11} /><h3>7ª</h3></div>
+                    
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
@@ -89,20 +79,15 @@ export default props => {
                 
 
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>ST</span>
+                    
                     <div><Note note={b2} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b4} /><h3>3ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b6} /><h3>4ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b4} /><h3>3ª</h3></div>
+                                        <div><Note note={b6} /><h3>4ª</h3></div>
+                                        <div><Note note={b8} /><h3>5ª</h3></div>
+                    
                     <div><Note note={b9} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                                        <div><Note note={b11} /><h3>7ª</h3></div>
+                                        <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
             </>
@@ -115,19 +100,14 @@ export default props => {
 
                     
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
-                    <div><Note note={b3} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b5} /><h3>3ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b7} /><h3>4ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b3} /><h3>2ª</h3></div>
+                                        <div><Note note={b5} /><h3>3ª</h3></div>
+                                        <div><Note note={b7} /><h3>4ª</h3></div>
+                    
                     <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b10} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b12} /><h3>7ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b10} /><h3>6ª</h3></div>
+                                        <div><Note note={b12} /><h3>7ª</h3></div>
+                    
                     <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
@@ -141,20 +121,15 @@ export default props => {
 
                     
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
-                    <div><Note note={b3} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b5} /><h3>3ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b3} /><h3>2ª</h3></div>
+                                        <div><Note note={b5} /><h3>3ª</h3></div>
+                    
                     <div><Note note={b6} /><h3>4ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b10} /><h3>6ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b8} /><h3>5ª</h3></div>
+                                        <div><Note note={b10} /><h3>6ª</h3></div>
+                    
                     <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                                        <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
             </>
@@ -167,20 +142,15 @@ export default props => {
 
                                    
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>T</span>
-                    <div><Note note={b3} /><h3>2ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b3} /><h3>2ª</h3></div>
+                    
                     <div><Note note={b4} /><h3>3ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b6} /><h3>4ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b8} /><h3>5ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b6} /><h3>4ª</h3></div>
+                                        <div><Note note={b8} /><h3>5ª</h3></div>
+                    
                     <div><Note note={b9} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                                        <div><Note note={b11} /><h3>7ª</h3></div>
+                                        <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
             </>
@@ -192,20 +162,15 @@ export default props => {
             <div className="resultNotes">
 
                     <div><Note note={bT} /><h3>T</h3></div>
-                    <span>ST</span>
+                    
                     <div><Note note={b2} /><h3>2ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b4} /><h3>3ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b6} /><h3>4ª</h3></div>
-                    <span>ST</span>
+                                        <div><Note note={b4} /><h3>3ª</h3></div>
+                                        <div><Note note={b6} /><h3>4ª</h3></div>
+                    
                     <div><Note note={b7} /><h3>5ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b9} /><h3>6ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b11} /><h3>7ª</h3></div>
-                    <span>T</span>
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                                        <div><Note note={b9} /><h3>6ª</h3></div>
+                                        <div><Note note={b11} /><h3>7ª</h3></div>
+                                        <div><Note note={b13} /><h3>8ª</h3></div>
 
                 </div>
             </>

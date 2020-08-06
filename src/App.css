@@ -17,52 +17,51 @@
   --color-button-text: #FFFFFF;
   --color-box-base: #FFFFFF;
   --color-box-footer: #FAFAFC;
-
   font-size: 45%;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body, #root{
+html, body, #root {
   height: 100vh;
 }
 
-body{
+body {
   background: var(--color-primary);
-  }
+}
 
-#root{
+#root {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-body,input,button,textarea{
-  font:500 1.6rem Roboto;
+body, input, button, textarea {
+  font: 500 1.6rem Roboto;
 }
 
-.App{
+.App {
   max-width: 700px;
   width: 100vw;
   height: 100vh;
-  display:block;
+  display: block;
   justify-content: center;
   align-items: center;
   color: var(--color-text-in-primary);
   background: var(--color-primary);
 }
 
-@media(min-width: 700px){
-  :root{
+@media(min-width: 700px) {
+  :root {
     font-size: 65%;
   }
 }
 
-button{
+button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,62 +72,61 @@ button{
   color: var(--color-button-text);
   /* background: var(--color-secundary-dark); */
   background: var(--color-text-complement);
-
 }
 
-.option{
+.option {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.option button{
+.option button {
   padding: 0 1.6rem;
   width: 20rem;
   height: 5.6rem;
-  border:0;
+  border: 0;
   border-radius: 1rem;
   font: 700 2rem Roboto;
   transition: 0.2s;
 }
 
-.option button:hover{
+.option button:hover {
   background: var(--color-secundary);
 }
 
-.notes{
+.notes {
   display: flex;
   flex-wrap: wrap;
-  justify-content:  space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 2rem;
-    }
+  margin: 1rem auto 0;
+}
 
-.notes button{
+.notes button {
   padding: 0 1.6rem;
-  width: 15rem;
+  width: 12rem;
   border: 0;
   height: 5.6rem;
   border-radius: 1rem;
   font: 700 rem Roboto;
   transition: 0.2s;
   margin: 0 auto 3rem;
-  
 }
 
-.notes button:hover{
+.notes button:hover {
   background: var(--color-text-title);
 }
 
-.scale, .chord{
+.scale, .chord {
   display: flex;
   flex-wrap: wrap;
-  justify-content:  space-evenly;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 1rem auto;
 }
 
-.scale button, .chord button{
-  
+.scale button, .chord button {
   padding: 0 1.6rem;
   border: 0;
   height: 5.6rem;
@@ -138,13 +136,13 @@ button{
   margin: 0 auto 1rem;
 }
 
-.scale button:hover, .chord button:hover{
+.scale button:hover, .chord button:hover {
   background: var(--color-text-base);
 }
 
-.selected{
+.selected {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: center;
   background: var(--color-primary-lighter);
   border-radius: 2rem;
@@ -154,34 +152,33 @@ button{
   height: max-content;
   border-radius: 1rem;
   font: bolder 6rem Roboto;
-  color:var(--color-background);
+  color: var(--color-background);
   transition: 0.2s;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
-.selected:hover{
+.selected:hover {
   background: var(--color-box-base);
   color: var(--color-secundary-dark);
   cursor: pointer;
 }
 
-.result{
+.result {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  }
+}
 
 .resultNotes {
   display: flex;
   flex-wrap: wrap;
-  justify-content:  space-evenly;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.resultNotes button{
-
+.resultNotes button {
   padding: 0 1.6rem;
-  width: 7rem;
+  width: 6rem;
   border: 0;
   height: 5.6rem;
   border-radius: 50%;
@@ -190,11 +187,11 @@ button{
   margin: 1rem auto 0rem;
 }
 
-.resultNotes button:hover{
+.resultNotes button:hover {
   background: var(--color-primary-dark);
 }
 
-h3, span{
+h3, span {
   display: flex;
   justify-content: space-evenly;
-  }
+}

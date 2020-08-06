@@ -27,7 +27,7 @@ function App() {
           <button value="acordes" onClick={() => setOption("ACORDES")} autoFocus>ACORDES</button>
         </div>
       </header>
-
+      <hr />
       <div className="notes">
 
         {sub.map((v) => (
@@ -35,17 +35,20 @@ function App() {
         ))}
 
       </div>
-
+      <hr />
       {option === "ESCALAS" ? <>
-        <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note}/>
+        <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note} />
+        <hr />
         <Selected note={selectedNote} Tonica={note} Scale={scale} />
         <ResultScale Tonica={note} Scale={scale} /></>
         : <>
-          <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note}/>
-          <Selected Tonica={note} note={selectedNote} chord={chord}/>
+          <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note} />
+          <hr />
+          <Selected Tonica={note} note={selectedNote} chord={chord} />
           <ResultChord Tonica={note} chord={chord} />
         </>
       }
+      
 
     </div>
 

@@ -23,6 +23,18 @@ export default[
     {id:21, note:'A', name:'Lá'},
     {id:22, note:'A#', name:'Lá Sustenido'},
     {id:23, note:'B', name:'Si'},
+    {id:24, note:'C', name:'Dó'},
+    {id:25, note:'C#', name:'Dó Sustenido'},
+    {id:26, note:'D', name:'Ré'},
+    {id:27, note:'D#', name:'Ré Sustenido'},
+    {id:28, note:'E', name:'Mi'},
+    {id:29, note:'F', name:'Fá'},
+    {id:30, note:'F#', name:'Fá Sustenido'},
+    {id:31, note:'G', name:'Sol'},
+    {id:32, note:'G#', name:'Sol Sustenido'},
+    {id:33, note:'A', name:'Lá'},
+    {id:34, note:'A#', name:'Lá Sustenido'},
+    {id:35, note:'B', name:'Si'},
 
 
 ]

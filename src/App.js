@@ -23,8 +23,8 @@ function App() {
 
       <header>
         <div className="option">
-          <button value="escalas" onClick={() => setOption("ESCALAS")} >ESCALAS</button>
-          <button value="acordes" onClick={() => setOption("ACORDES")} autoFocus>ACORDES</button>
+          <button className="scale" value="escalas" onClick={() => setOption("ESCALAS")} >ESCALAS</button>
+          <button className="chord" value="acordes" onClick={() => setOption("ACORDES")} autoFocus>ACORDES</button>
         </div>
       </header>
       <hr />

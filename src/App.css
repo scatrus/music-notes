@@ -1,23 +1,14 @@
 :root {
-  --color-background: #F0F0F7;
-  --color-primary-lighter: #9871F5;
-  --color-primary-light: #916BEA;
-  --color-primary: #8257E5;
-  --color-primary-dark: #774DD6;
-  --color-primary-darker: #6842C2;
-  --color-secundary: #04D361;
-  --color-secundary-dark: #04BF58;
-  --color-title-in-primary: #FFFFFF;
-  --color-text-in-primary: #D4C2FF;
-  --color-text-title: #32264D;
-  --color-text-complement: #9C98A6;
-  --color-text-base: #6A6180;
-  --color-line-in-white: #E6E6F0;
-  --color-input-background: #F8F8FC;
-  --color-button-text: #FFFFFF;
-  --color-box-base: #FFFFFF;
-  --color-box-footer: #FAFAFC;
-  font-size: 45%;
+  --color-bg:#adadad;
+  --color-scale:#ff6f01;
+  --color-scale-light:#ffa866;
+  --color-chord:#0191ff;
+  --color-chord-light:#89ccff;
+  --color-button:#302f2f;
+  --color-button-light:#555555;
+  --color-button-text:#f1efef;
+  
+  font-size: 46%;
 }
 
 * {
@@ -31,7 +22,7 @@ html, body, #root {
 }
 
 body {
-  background: var(--color-primary);
+  background: var(--color-bg);
 }
 
 #root {
@@ -51,8 +42,8 @@ body, input, button, textarea {
   display: block;
   justify-content: center;
   align-items: center;
-  color: var(--color-text-in-primary);
-  background: var(--color-primary);
+  color: var();
+  background: var(--color-bg);
 }
 
 @media(min-width: 700px) {
@@ -69,9 +60,6 @@ button {
   font: 700 2.0rem Roboto;
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-button-text);
-  /* background: var(--color-secundary-dark); */
-  background: var(--color-text-complement);
 }
 
 .option {
@@ -88,10 +76,26 @@ button {
   border-radius: 1rem;
   font: 700 2rem Roboto;
   transition: 0.2s;
+  
 }
 
-.option button:hover {
-  background: var(--color-secundary);
+
+.option .chord{
+  background: var(--color-chord);
+  color: white;
+}
+
+.option .scale{
+  background: var(--color-scale);
+  color: white;
+}
+
+.option .scale:hover {
+  background: var(--color-scale-light);
+}
+
+.option .chord:hover {
+  background: var(--color-chord-light);
 }
 
 .notes {
@@ -112,10 +116,13 @@ button {
   font: 700 rem Roboto;
   transition: 0.2s;
   margin: 0 auto 3rem;
+  background: var(--color-button);
+  color: white;
 }
 
 .notes button:hover {
-  background: var(--color-text-title);
+  background: var(--color-button-light);
+  color: white;
 }
 
 .scale, .chord {
@@ -126,7 +133,8 @@ button {
   margin: 1rem auto;
 }
 
-.scale button, .chord button {
+.scale button{
+
   padding: 0 1.6rem;
   border: 0;
   height: 5.6rem;
@@ -134,17 +142,37 @@ button {
   font: 700 2rem Roboto;
   transition: 0.2s;
   margin: 0 auto 1rem;
+  color: var(--color-scale);
+  background: white;
+  }
+
+  .scale button:hover{
+    background-color: var(--color-scale);
+    color: white;
+  }
+
+.chord button {
+  padding: 0 1.6rem;
+  border: 0;
+  height: 5.6rem;
+  border-radius: 1rem;
+  font: 700 2rem Roboto;
+  transition: 0.2s;
+  margin: 0 ;
+  background: white;
+  color: var(--color-chord);
 }
 
-.scale button:hover, .chord button:hover {
-  background: var(--color-text-base);
+.chord button:hover {
+  background: var(--color-chord);
+  color: white;
 }
 
 .selected {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-primary-lighter);
+  background: var(-color-chords);
   border-radius: 2rem;
   width: max-content;
   padding: 2rem;
@@ -152,15 +180,16 @@ button {
   height: max-content;
   border-radius: 1rem;
   font: bolder 6rem Roboto;
-  color: var(--color-background);
+  background: white;
   transition: 0.2s;
   margin: 1rem auto;
 }
 
 .selected:hover {
-  background: var(--color-box-base);
-  color: var(--color-secundary-dark);
+  background: var(-color-bg);
+  color: var(-color-bg);
   cursor: pointer;
+  
 }
 
 .result {
@@ -178,20 +207,24 @@ button {
 
 .resultNotes button {
   padding: 0 1.6rem;
-  width: 6rem;
+  width: 5rem;
   border: 0;
-  height: 5.6rem;
+  height: 5rem;
   border-radius: 50%;
   font: 700 rem Roboto;
   transition: 0.2s;
-  margin: 1rem auto 0rem;
+  margin: 1rem 0.5rem 0rem;
+  
+  background: var(--color-button-text);
 }
 
 .resultNotes button:hover {
-  background: var(--color-primary-dark);
+  background: var(-color-bg);
+  margin: 0 1rem;
 }
 
 h3, span {
   display: flex;
   justify-content: space-evenly;
+  
 }

@@ -185,8 +185,8 @@ button {
 }
 
 .selected:hover {
-  color: var(--color-scale);
-  background: var(--color-chord-light);
+  color: #ffa866;
+  background: #3b4677;
   cursor: pointer;
   
 }

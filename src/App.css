@@ -60,6 +60,7 @@ button {
   font: 700 2.0rem Roboto;
   text-decoration: none;
   cursor: pointer;
+  outline: none;
 }
 
 .option {

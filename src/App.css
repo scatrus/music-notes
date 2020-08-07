@@ -172,7 +172,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(-color-chords);
+  background: var(--color-button-text);
   border-radius: 2rem;
   width: max-content;
   padding: 2rem;
@@ -180,14 +180,13 @@ button {
   height: max-content;
   border-radius: 1rem;
   font: bolder 6rem Roboto;
-  background: white;
   transition: 0.2s;
   margin: 1rem auto;
 }
 
 .selected:hover {
-  background: var(-color-bg);
-  color: var(-color-bg);
+  color: var(--color-scale);
+  background: var(--color-chord-light);
   cursor: pointer;
   
 }
@@ -219,8 +218,9 @@ button {
 }
 
 .resultNotes button:hover {
-  background: var(-color-bg);
-  margin: 0 1rem;
+  background: var(--color-button-light);
+  color: var(--color-button-text);
+  margin-top: 0;
 }
 
 h3, span {

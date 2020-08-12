@@ -99,7 +99,7 @@ button {
   background: var(--color-chord-light);
 }
 
-.notes {
+.tones {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -108,7 +108,7 @@ button {
   margin: 1rem auto 0;
 }
 
-.notes button {
+.tones button {
   padding: 0 1.6rem;
   width: 12rem;
   border: 0;
@@ -121,7 +121,7 @@ button {
   color: white;
 }
 
-.notes button:hover {
+.tones button:hover {
   background: var(--color-button-light);
   color: white;
 }

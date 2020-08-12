@@ -1,5 +1,4 @@
 import React from 'react'
-import Note from './Note'
 import Notes from '../data/notes'
 
 export default props => {
@@ -30,19 +29,15 @@ export default props => {
             {props.Scale === "JÔNICO" ? <>
 
                 <div className="resultNotes">
-                   
 
-
-                    <div><Note note={bT} /><h3>T</h3></div>
-                                        <div><Note note={b3} /><h3>2ª</h3></div>
-                                        <div><Note note={b5} /><h3>3ª</h3></div>
-                    
-                    <div><Note note={b6} /><h3>4ª</h3></div>
-                                        <div><Note note={b8} /><h3>5ª</h3></div>
-                                        <div><Note note={b10} /><h3>6ª</h3></div>
-                                        <div><Note note={b12} /><h3>7ª</h3></div>
-                    
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b3} <h3>2ª</h3></div>
+                    <div>{b5} <h3>3ª</h3></div>
+                    <div>{b6} <h3>4ª</h3></div>
+                    <div>{b8} <h3>5ª</h3></div>
+                    <div>{b10} <h3>6ª</h3></div>
+                    <div>{b12} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>
@@ -50,21 +45,18 @@ export default props => {
             }
 
             {props.Scale === "DÓRICO" ? <>
-               
 
-            <div className="resultNotes">
-                                    
 
-                    <div><Note note={bT} /><h3>T</h3></div>
-                                        <div><Note note={b3} /><h3>2ª</h3></div>
-                                        <div><Note note={b4} /><h3>3ª</h3></div>
-                    
-                    <div><Note note={b6} /><h3>4ª</h3></div>
-                                        <div><Note note={b8} /><h3>5ª</h3></div>
-                                        <div><Note note={b10} /><h3>6ª</h3></div>
-                                        <div><Note note={b11} /><h3>7ª</h3></div>
-                    
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                <div className="resultNotes">
+
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b3} <h3>2ª</h3></div>
+                    <div>{b4} <h3>3ª</h3></div>
+                    <div>{b6} <h3>4ª</h3></div>
+                    <div>{b8} <h3>5ª</h3></div>
+                    <div>{b10} <h3>6ª</h3></div>
+                    <div>{b11} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>
@@ -72,22 +64,17 @@ export default props => {
             }
 
             {props.Scale === "FRÍGIO" ? <>
-               
+
                 <div className="resultNotes">
 
-                    
-                
-
-                    <div><Note note={bT} /><h3>T</h3></div>
-                    
-                    <div><Note note={b2} /><h3>2ª</h3></div>
-                                        <div><Note note={b4} /><h3>3ª</h3></div>
-                                        <div><Note note={b6} /><h3>4ª</h3></div>
-                                        <div><Note note={b8} /><h3>5ª</h3></div>
-                    
-                    <div><Note note={b9} /><h3>6ª</h3></div>
-                                        <div><Note note={b11} /><h3>7ª</h3></div>
-                                        <div><Note note={b13} /><h3>8ª</h3></div>
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b2} <h3>2ª</h3></div>
+                    <div>{b4} <h3>3ª</h3></div>
+                    <div>{b6} <h3>4ª</h3></div>
+                    <div>{b8} <h3>5ª</h3></div>
+                    <div>{b9} <h3>6ª</h3></div>
+                    <div>{b11} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>
@@ -95,20 +82,17 @@ export default props => {
             }
 
             {props.Scale === "LÍDIO" ? <>
-                
+
                 <div className="resultNotes">
 
-                    
-                    <div><Note note={bT} /><h3>T</h3></div>
-                                        <div><Note note={b3} /><h3>2ª</h3></div>
-                                        <div><Note note={b5} /><h3>3ª</h3></div>
-                                        <div><Note note={b7} /><h3>4ª</h3></div>
-                    
-                    <div><Note note={b8} /><h3>5ª</h3></div>
-                                        <div><Note note={b10} /><h3>6ª</h3></div>
-                                        <div><Note note={b12} /><h3>7ª</h3></div>
-                    
-                    <div><Note note={b13} /><h3>8ª</h3></div>
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b3} <h3>2ª</h3></div>
+                    <div>{b5} <h3>3ª</h3></div>
+                    <div>{b7} <h3>4ª</h3></div>
+                    <div>{b8} <h3>5ª</h3></div>
+                    <div>{b10} <h3>6ª</h3></div>
+                    <div>{b12} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>
@@ -116,20 +100,17 @@ export default props => {
             }
 
             {props.Scale === "MIXOLÍDIO" ? <>
-               
-            <div className="resultNotes">
 
-                    
-                    <div><Note note={bT} /><h3>T</h3></div>
-                                        <div><Note note={b3} /><h3>2ª</h3></div>
-                                        <div><Note note={b5} /><h3>3ª</h3></div>
-                    
-                    <div><Note note={b6} /><h3>4ª</h3></div>
-                                        <div><Note note={b8} /><h3>5ª</h3></div>
-                                        <div><Note note={b10} /><h3>6ª</h3></div>
-                    
-                    <div><Note note={b11} /><h3>7ª</h3></div>
-                                        <div><Note note={b13} /><h3>8ª</h3></div>
+                <div className="resultNotes">
+
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b3} <h3>2ª</h3></div>
+                    <div>{b5} <h3>3ª</h3></div>
+                    <div>{b6} <h3>4ª</h3></div>
+                    <div>{b8} <h3>5ª</h3></div>
+                    <div>{b10} <h3>6ª</h3></div>
+                    <div>{b11} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>
@@ -137,20 +118,17 @@ export default props => {
             }
 
             {props.Scale === "EÓLICO" ? <>
-               
-            <div className="resultNotes">
 
-                                   
-                    <div><Note note={bT} /><h3>T</h3></div>
-                                        <div><Note note={b3} /><h3>2ª</h3></div>
-                    
-                    <div><Note note={b4} /><h3>3ª</h3></div>
-                                        <div><Note note={b6} /><h3>4ª</h3></div>
-                                        <div><Note note={b8} /><h3>5ª</h3></div>
-                    
-                    <div><Note note={b9} /><h3>6ª</h3></div>
-                                        <div><Note note={b11} /><h3>7ª</h3></div>
-                                        <div><Note note={b13} /><h3>8ª</h3></div>
+                <div className="resultNotes">
+
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b3} <h3>2ª</h3></div>
+                    <div>{b4} <h3>3ª</h3></div>
+                    <div>{b6} <h3>4ª</h3></div>
+                    <div>{b8} <h3>5ª</h3></div>
+                    <div>{b9} <h3>6ª</h3></div>
+                    <div>{b11} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>
@@ -158,19 +136,17 @@ export default props => {
             }
 
             {props.Scale === "LÓCRIO" ? <>
-                
-            <div className="resultNotes">
 
-                    <div><Note note={bT} /><h3>T</h3></div>
-                    
-                    <div><Note note={b2} /><h3>2ª</h3></div>
-                                        <div><Note note={b4} /><h3>3ª</h3></div>
-                                        <div><Note note={b6} /><h3>4ª</h3></div>
-                    
-                    <div><Note note={b7} /><h3>5ª</h3></div>
-                                        <div><Note note={b9} /><h3>6ª</h3></div>
-                                        <div><Note note={b11} /><h3>7ª</h3></div>
-                                        <div><Note note={b13} /><h3>8ª</h3></div>
+                <div className="resultNotes">
+
+                    <div>{bT} <h3>T</h3></div>
+                    <div>{b2} <h3>2ª</h3></div>
+                    <div>{b4} <h3>3ª</h3></div>
+                    <div>{b6} <h3>4ª</h3></div>
+                    <div>{b7} <h3>5ª</h3></div>
+                    <div>{b9} <h3>6ª</h3></div>
+                    <div>{b11} <h3>7ª</h3></div>
+                    <div>{b13} <h3>8ª</h3></div>
 
                 </div>
             </>

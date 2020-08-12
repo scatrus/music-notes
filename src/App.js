@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'
-import Button from './components/Button'
+import Tone from './components/Tone'
 import Note from './data/notes'
 import Selected from './components/Selected'
 import Chord from './components/Chord';
@@ -28,27 +28,30 @@ function App() {
         </div>
       </header>
       <hr />
-      <div className="notes">
+
+      <div className="tones">
 
         {sub.map((v) => (
-          <Button key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} />
+          <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} />
         ))}
 
       </div>
       <hr />
+
       {option === "ESCALAS" ? <>
         <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note} />
         <hr />
         <Selected note={selectedNote} Tonica={note} Scale={scale} />
-        <ResultScale Tonica={note} Scale={scale} /></>
-        : <>
-          <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note} />
+        <ResultScale Tonica={note} Scale={scale} /></>:<></>
+      }
+
+      {option === "ACORDES" ? <>
+        <Chord setChord={setChord} setSelectedNote={setSelectedNote} note={note} />
           <hr />
           <Selected Tonica={note} note={selectedNote} chord={chord} />
-          <ResultChord Tonica={note} chord={chord} />
-        </>
+          <ResultChord Tonica={note} chord={chord} /></>:<></>
       }
-      
+
 
     </div>
 

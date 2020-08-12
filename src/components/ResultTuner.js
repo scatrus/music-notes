@@ -5,15 +5,15 @@ export default props => {
 
     /* eslint-disable */
 
-    const E1 = <button onClick={() => playKey(4 * 12 + 28)}>E</button>
-    const D1 = <button onClick={() => playKey(4 * 12 + 26)}>D</button>
-    const B = <button onClick={() => playKey(4 * 12 + 23)}>B</button>
-    const A1 = <button onClick={() => playKey(4 * 12 + 21)}>A</button>
-    const G = <button onClick={() => playKey(4 * 12 + 19)}>G</button>
-    const D = <button onClick={() => playKey(4 * 12 + 14)}>D</button>
-    const A = <button onClick={() => playKey(4 * 12 + 9)}>A</button>
-    const E2 = <button onClick={() => playKey(4 * 12 + 4)}>E</button>
-    const D2 = <button onClick={() => playKey(4 * 12 + 2)}>D</button>
+    const E1 = <button onClick={() => playKey(4 * 12 + 28-12)}>E</button>
+    const D1 = <button onClick={() => playKey(4 * 12 + 26-12)}>D</button>
+    const B = <button onClick={() => playKey(4 * 12 + 23-12)}>B</button>
+    const A1 = <button onClick={() => playKey(4 * 12 + 21-12)}>A</button>
+    const G = <button onClick={() => playKey(4 * 12 + 19-12)}>G</button>
+    const D = <button onClick={() => playKey(4 * 12 + 14-12)}>D</button>
+    const A = <button onClick={() => playKey(4 * 12 + 9-12)}>A</button>
+    const E2 = <button onClick={() => playKey(4 * 12 + 4-12)}>E</button>
+    const D2 = <button onClick={() => playKey(4 * 12 + 2-12)}>D</button>
 
     return (
         <div className="result">

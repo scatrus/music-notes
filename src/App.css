@@ -126,7 +126,7 @@ button {
   color: white;
 }
 
-.scale, .chord {
+.scale, .chord, .tuner{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -151,6 +151,24 @@ button {
     background-color: var(--color-scale);
     color: white;
   }
+
+  .tuner button{
+
+    padding: 0 1.6rem;
+    border: 0;
+    height: 5.6rem;
+    border-radius: 1rem;
+    font: 700 2rem Roboto;
+    transition: 0.2s;
+    margin: 0 auto 1rem;
+    color: var(--color-button);
+    background: white;
+    }
+  
+    .tuner button:hover{
+      background-color: var(--color-button);
+      color: white;
+    }
 
 .chord button {
   padding: 0 1.6rem;

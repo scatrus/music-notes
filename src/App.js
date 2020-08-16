@@ -63,6 +63,7 @@ function App() {
             <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setChord={setChord} setScale={setScale}/>
           ))}
 
+
         </div>
         <hr />
 

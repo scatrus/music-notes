@@ -13,8 +13,8 @@ import ResultTuner from './components/ResultTuner';
 function App() {
 
   const [note, setNote] = useState('C')
-  const [selectedNote, setSelectedNote] = useState('C')
-  const [scale, setScale] = useState('')
+  const [selectedNote, setSelectedNote] = useState('')
+  const [scale, setScale] = useState('JÔNICO')
   const [chord, setChord] = useState('M')
   const [tuner, setTuner] = useState('')
   const [option, setOption] = useState('')
@@ -27,9 +27,9 @@ function App() {
 
       <header>
         <div className="option">
-          <button className="scale" value="escalas" onClick={() => setOption("ESCALAS")} >ESCALAS</button>
+          <button className="scale" value="escalas" onClick={() => setOption("ESCALAS") & setNote("C") & setScale("JÔNICO") & setSelectedNote("C JÔNICO")} >ESCALAS</button>
           <button className="tuner" value="tuner" onClick={() => setOption("AFINADOR")} autoFocus>AFINADOR</button>
-          <button className="chord" value="acordes" onClick={() => setOption("ACORDES")} >ACORDES</button>
+          <button className="chord" value="acordes" onClick={() => setOption("ACORDES") & setNote("C") & setChord("M") & setSelectedNote("C")} >ACORDES</button>
         </div>
       </header>
       <hr />
@@ -46,8 +46,10 @@ function App() {
 
         </div>
         <hr />
+        
 
         <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note} />
+        
         <hr />
         <Selected note={selectedNote} Tonica={note} Scale={scale} />
         <ResultScale Tonica={note} Scale={scale} /></> : <></>

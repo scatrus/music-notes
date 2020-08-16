@@ -41,7 +41,7 @@ function App() {
         <div className="tones">
 
           {sub.map((v) => (
-            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote}/>
+            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setScale={setScale}  setChord={setChord}/>
           ))}
 
         </div>
@@ -60,7 +60,7 @@ function App() {
         <div className="tones">
 
           {sub.map((v) => (
-            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} />
+            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setChord={setChord} setScale={setScale}/>
           ))}
 
         </div>

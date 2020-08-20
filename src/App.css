@@ -247,3 +247,37 @@ h3, span {
   justify-content: space-evenly;
   
 }
+
+.resultVoices {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.resultVoices button {
+  padding: 0 1.6rem;
+  width: 5rem;
+  border: 0;
+  height: 5rem;
+  border-radius: 50%;
+  font: 700 rem Roboto;
+  transition: 0.2s;
+  margin: 0;
+  
+  background: var(--color-button-text);
+}
+
+.resultVoices .subB {
+  padding: 0 1.6rem;
+  width: 2rem;
+  border: 0;
+  height: 2rem;
+  border-radius: 50%;
+  font: 700 rem Roboto;
+  transition: 0.2s;
+  margin: 0 auto;
+
+  
+  background: var(--color-button-text);
+}

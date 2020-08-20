@@ -9,6 +9,7 @@ import Scale from './components/Scale';
 import ResultChord from './components/ResultChord';
 import ResultScale from './components/ResultScale';
 import ResultTuner from './components/ResultTuner';
+import Voice from './components/Voice';
 
 function App() {
 
@@ -27,8 +28,9 @@ function App() {
 
       <header>
         <div className="option">
-          <button className="scale" value="escalas" onClick={() => setOption("ESCALAS") & setNote("C") & setScale("JÔNICO") & setSelectedNote("C JÔNICO")} >ESCALAS</button>
           <button className="tuner" value="tuner" onClick={() => setOption("AFINADOR")} autoFocus>AFINADOR</button>
+          <button className="scale" value="escalas" onClick={() => setOption("ESCALAS") & setNote("C") & setScale("JÔNICO") & setSelectedNote("C JÔNICO")} >ESCALAS</button>
+          <button className="scale" value="vozes" onClick={() => setOption("VOZES") & setNote("C") & setScale("JÔNICO") & setSelectedNote("C")} >VOZES</button>
           <button className="chord" value="acordes" onClick={() => setOption("ACORDES") & setNote("C") & setChord("M") & setSelectedNote("C")} >ACORDES</button>
         </div>
       </header>
@@ -41,15 +43,15 @@ function App() {
         <div className="tones">
 
           {sub.map((v) => (
-            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setScale={setScale}  setChord={setChord}/>
+            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setScale={setScale} setChord={setChord} />
           ))}
 
         </div>
         <hr />
-        
+
 
         <Scale setScale={setScale} setSelectedNote={setSelectedNote} note={note} />
-        
+
         <hr />
         <Selected note={selectedNote} Tonica={note} Scale={scale} />
         <ResultScale Tonica={note} Scale={scale} /></> : <></>
@@ -60,7 +62,7 @@ function App() {
         <div className="tones">
 
           {sub.map((v) => (
-            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setChord={setChord} setScale={setScale}/>
+            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setChord={setChord} setScale={setScale} />
           ))}
 
 
@@ -78,6 +80,22 @@ function App() {
         <hr />
         <Selected Tonica={note} note={selectedNote} tuner={tuner} />
         <ResultTuner Tonica={note} tuner={tuner} /></> : <></>
+      }
+
+      {option === "VOZES" ? <>
+
+        <div className="tones">
+
+          {sub.map((v) => (
+            <Tone key={v.note} note={v.note} setNote={setNote} setSelectedNote={setSelectedNote} setScale={setScale} setChord={setChord} />
+          ))}
+
+        </div>
+        <hr />
+
+        <hr />
+        <Selected note={selectedNote} Tonica={note} Scale={scale} />
+        <Voice Tonica={note} Scale={scale} /></> : <></>
       }
 
     </div>

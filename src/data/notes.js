@@ -35,6 +35,19 @@ export default[
     {id:33, note:'A', name:'Lá'},
     {id:34, note:'A#', name:'Lá Sustenido'},
     {id:35, note:'B', name:'Si'},
+    {id:36, note:'C', name:'Si'},
+    {id:37, note:'C#', name:'Si'},
+    {id:38, note:'D', name:'Si'},
+    {id:39, note:'D#', name:'Si'},
+    {id:40, note:'E', name:'Si'},
+    {id:41, note:'F', name:'Si'},
+    {id:42, note:'F', name:'Si'},
+    {id:43, note:'G', name:'Si'},
+    {id:44, note:'G#', name:'Si'},
+    {id:45, note:'A', name:'Si'},
+    {id:46, note:'A#', name:'Si'},
+    {id:47, note:'B', name:'Si'},
+    {id:48, note:'C', name:'Si'},
 
 
 ]

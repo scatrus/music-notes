@@ -28,6 +28,7 @@ function App() {
 
       <header>
         <div className="option">
+          
           <button className="tuner" value="tuner" onClick={() => setOption("AFINADOR")} autoFocus>AFINADOR</button>
           <button className="scale" value="escalas" onClick={() => setOption("ESCALAS") & setNote("C") & setScale("JÔNICO") & setSelectedNote("C JÔNICO")} >ESCALAS</button>
           <button className="scale" value="vozes" onClick={() => setOption("VOZES") & setNote("C") & setScale("JÔNICO") & setSelectedNote("C")} >VOZES</button>

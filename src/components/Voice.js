@@ -42,11 +42,20 @@ export default props => {
         { id: 35, note: Notes[N + 35].note, button: <Button N = {N + 35} Note = {Notes[N + 35].note} /> },
     ]
 
+    
+
     const [n1, setN1] = useState(7)
     const [n2, setN2] = useState(7)
     const [n3, setN3] = useState(7)
     const [n4, setN4] = useState(7)
     const [n5, setN5] = useState(7)
+    const [n6, setN6] = useState(7)
+    const [n7, setN7] = useState(7)
+    const [n8, setN8] = useState(7)
+    const [n9, setN9] = useState(7)
+    const [n10, setN10] = useState(7)
+    const [n11, setN11] = useState(7)
+    const [n12, setN12] = useState(7)
 
     return (<>
 
@@ -100,6 +109,48 @@ export default props => {
                 <button className="subB" onClick={() => setN5(n5 - 1)}>b</button>
             </div>
 
+            <div>
+                <button className="subB" onClick={() => setN6(n6 + 1)}>#</button>
+                {Notas[n6].button}
+                <button className="subB" onClick={() => setN6(n6 - 1)}>b</button>
+            </div>
+
+            <div>
+                <button className="subB" onClick={() => setN7(n7 + 1)}>#</button>
+                {Notas[n7].button}
+                <button className="subB" onClick={() => setN7(n7 - 1)}>b</button>
+            </div>
+
+            <div>
+                <button className="subB" onClick={() => setN8(n8 + 1)}>#</button>
+                {Notas[n8].button}
+                <button className="subB" onClick={() => setN8(n8 - 1)}>b</button>
+            </div>
+
+            <div>
+                <button className="subB" onClick={() => setN9(n9 + 1)}>#</button>
+                {Notas[n9].button}
+                <button className="subB" onClick={() => setN9(n9 - 1)}>b</button>
+            </div>
+
+            <div>
+                <button className="subB" onClick={() => setN10(n10 + 1)}>#</button>
+                {Notas[n10].button}
+                <button className="subB" onClick={() => setN10(n10 - 1)}>b</button>
+            </div>
+
+            <div>
+                <button className="subB" onClick={() => setN11(n11 + 1)}>#</button>
+                {Notas[n11].button}
+                <button className="subB" onClick={() => setN11(n11 - 1)}>b</button>
+            </div>
+
+            <div>
+                <button className="subB" onClick={() => setN12(n12 + 1)}>#</button>
+                {Notas[n12].button}
+                <button className="subB" onClick={() => setN12(n12 - 1)}>b</button>
+            </div>
+
         </div>
         {/* ----------------------------------------------------------------- */}
         <hr /><br />
@@ -113,6 +164,13 @@ export default props => {
                     <div>{Notas[n3 + 2].button}</div>
                     <div>{Notas[n4 + 2].button}</div>
                     <div>{Notas[n5 + 2].button}</div>
+                    <div>{Notas[n6 + 2].button}</div>
+                    <div>{Notas[n7 + 2].button}</div>
+                    <div>{Notas[n8 + 2].button}</div>
+                    <div>{Notas[n9 + 2].button}</div>
+                    <div>{Notas[n10 + 2].button}</div>
+                    <div>{Notas[n11+ 2].button}</div>
+                    <div>{Notas[n12 + 2].button}</div>
                 </div>
                 <div className="resultVoices"><div className="voz">Quinta</div>
                     
@@ -121,6 +179,13 @@ export default props => {
                     <div>{Notas[n3 + 4].button}</div>
                     <div>{Notas[n4 + 4].button}</div>
                     <div>{Notas[n5 + 4].button}</div>
+                    <div>{Notas[n6 + 4].button}</div>
+                    <div>{Notas[n7 + 4].button}</div>
+                    <div>{Notas[n8 + 4].button}</div>
+                    <div>{Notas[n9 + 4].button}</div>
+                    <div>{Notas[n10 + 4].button}</div>
+                    <div>{Notas[n11+ 4].button}</div>
+                    <div>{Notas[n12 + 4].button}</div>
                 </div>
                 <div className="resultVoices"><div className="voz">T e 3</div>
                     

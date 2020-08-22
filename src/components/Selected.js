@@ -148,9 +148,9 @@ export default (props) => {
         }
 
         {props.Scale === "JÔNICO" ? <>
-
-            <div className="selected" onClick={() => setTimeout(() =>
-                playKey(4 * 12 + (N)), 0) &
+        {/* <button onClick={()=>player.cancelQueue(audioContext)}>Stop</button> */}
+            <div className="selected" onClick={() => 
+                setTimeout(() => playKey(4 * 12 + (N)), 0) &
                 setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                 setTimeout(() => playKey(4 * 12 + (N + 4)), 1000) &
                 setTimeout(() => playKey(4 * 12 + (N + 5)), 1500) &
@@ -176,8 +176,8 @@ export default (props) => {
 
         {props.Scale === "DÓRICO" ? <>
 
-            <div className="selected" onClick={() => setTimeout(() =>
-                playKey(4 * 12 + (N)), 0) &
+            <div className="selected" onClick={() => 
+                setTimeout(() => playKey(4 * 12 + (N)), 0) &
                 setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                 setTimeout(() => playKey(4 * 12 + (N + 3)), 1000) &
                 setTimeout(() => playKey(4 * 12 + (N + 5)), 1500) &

@@ -22,8 +22,14 @@
       player.queueWaveTable(audioContext, audioContext.destination, _tone_0000_Aspirin_sf2_file, 0, pitch, 1);
       
     }
-    // envelope.cancel(playKey);
+    function stop() {
+      player.cancelQueue(audioContext);
+      
+    }
+
     
+
+
   </script>
 
   <title>Music Notes</title>

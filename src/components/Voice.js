@@ -9,41 +9,40 @@ export default props => {
     const result = Notes.find(n1 => n1.note === props.Tonica);
     const N = result.id
 
-    const bT = <Button N = {N} Note = {props.Tonica} />
-    const b3 = <Button N = {N + 2} Note = {Notes[N + 2].note} />
-    const b5 = <Button N = {N + 4} Note = {Notes[N + 4].note} />
-    const b6 = <Button N = {N + 5} Note = {Notes[N + 5].note} />
-    const b8 = <Button N = {N + 7} Note = {Notes[N + 7].note} />
-    const b10 = <Button N = {N + 9} Note = {Notes[N + 9].note} />
-    const b12 = <Button N = {N + 11} Note = {Notes[N + 11].note} />
-    const b13 = <Button N = {N + 12} Note = {Notes[N + 12].note} />
+    const bT = <Button N={N} Note={props.Tonica} />
+    const b3 = <Button N={N + 2} Note={Notes[N + 2].note} />
+    const b5 = <Button N={N + 4} Note={Notes[N + 4].note} />
+    const b6 = <Button N={N + 5} Note={Notes[N + 5].note} />
+    const b8 = <Button N={N + 7} Note={Notes[N + 7].note} />
+    const b10 = <Button N={N + 9} Note={Notes[N + 9].note} />
+    const b12 = <Button N={N + 11} Note={Notes[N + 11].note} />
+    const b13 = <Button N={N + 12} Note={Notes[N + 12].note} />
 
     const Notas = [
-        { id: 0, note: props.Tonica, button: <Button N = {N} Note = {props.Tonica} /> },
-        { id: 2, note: Notes[N + 2].note, button: <Button N = {N + 2} Note = {Notes[N + 2].note} /> },
-        { id: 4, note: Notes[N + 4].note, button: <Button N = {N + 4} Note = {Notes[N + 4].note} /> },
-        { id: 5, note: Notes[N + 5].note, button: <Button N = {N + 5} Note = {Notes[N + 5].note} /> },
-        { id: 7, note: Notes[N + 7].note, button: <Button N = {N + 7} Note = {Notes[N + 7].note} /> },
-        { id: 9, note: Notes[N + 9].note, button: <Button N = {N + 9} Note = {Notes[N + 9].note} /> },
-        { id: 11, note: Notes[N + 11].note, button: <Button N = {N + 11} Note = {Notes[N + 11].note} /> },
-        { id: 12, note: Notes[N + 12].note, button: <Button N = {N + 12} Note = {Notes[N + 12].note} /> },
-        { id: 14, note: Notes[N + 14].note, button: <Button N = {N + 14} Note = {Notes[N + 14].note} /> },
-        { id: 16, note: Notes[N + 16].note, button: <Button N = {N + 16} Note = {Notes[N + 16].note} /> },
-        { id: 17, note: Notes[N + 17].note, button: <Button N = {N + 17} Note = {Notes[N + 17].note} /> },
-        { id: 19, note: Notes[N + 19].note, button: <Button N = {N + 19} Note = {Notes[N + 19].note} /> },
-        { id: 21, note: Notes[N + 21].note, button: <Button N = {N + 21} Note = {Notes[N + 21].note} /> },
-        { id: 23, note: Notes[N + 23].note, button: <Button N = {N + 23} Note = {Notes[N + 23].note} /> },
-        { id: 24, note: Notes[N + 24].note, button: <Button N = {N + 24} Note = {Notes[N + 24].note} /> },
-        { id: 26, note: Notes[N + 26].note, button: <Button N = {N + 26} Note = {Notes[N + 26].note} /> },
-        { id: 28, note: Notes[N + 28].note, button: <Button N = {N + 28} Note = {Notes[N + 28].note} /> },
-        { id: 29, note: Notes[N + 29].note, button: <Button N = {N + 29} Note = {Notes[N + 29].note} /> },
-        { id: 31, note: Notes[N + 31].note, button: <Button N = {N + 31} Note = {Notes[N + 31].note} /> },
-        { id: 33, note: Notes[N + 33].note, button: <Button N = {N + 33} Note = {Notes[N + 33].note} /> },
-        { id: 35, note: Notes[N + 35].note, button: <Button N = {N + 35} Note = {Notes[N + 35].note} /> },
+        { id: 0, note: props.Tonica, button: <Button N={N} Note={props.Tonica} /> },
+        { id: 2, note: Notes[N + 2].note, button: <Button N={N + 2} Note={Notes[N + 2].note} /> },
+        { id: 4, note: Notes[N + 4].note, button: <Button N={N + 4} Note={Notes[N + 4].note} /> },
+        { id: 5, note: Notes[N + 5].note, button: <Button N={N + 5} Note={Notes[N + 5].note} /> },
+        { id: 7, note: Notes[N + 7].note, button: <Button N={N + 7} Note={Notes[N + 7].note} /> },
+        { id: 9, note: Notes[N + 9].note, button: <Button N={N + 9} Note={Notes[N + 9].note} /> },
+        { id: 11, note: Notes[N + 11].note, button: <Button N={N + 11} Note={Notes[N + 11].note} /> },
+        { id: 12, note: Notes[N + 12].note, button: <Button N={N + 12} Note={Notes[N + 12].note} /> },
+        { id: 14, note: Notes[N + 14].note, button: <Button N={N + 14} Note={Notes[N + 14].note} /> },
+        { id: 16, note: Notes[N + 16].note, button: <Button N={N + 16} Note={Notes[N + 16].note} /> },
+        { id: 17, note: Notes[N + 17].note, button: <Button N={N + 17} Note={Notes[N + 17].note} /> },
+        { id: 19, note: Notes[N + 19].note, button: <Button N={N + 19} Note={Notes[N + 19].note} /> },
+        { id: 21, note: Notes[N + 21].note, button: <Button N={N + 21} Note={Notes[N + 21].note} /> },
+        { id: 23, note: Notes[N + 23].note, button: <Button N={N + 23} Note={Notes[N + 23].note} /> },
+        { id: 24, note: Notes[N + 24].note, button: <Button N={N + 24} Note={Notes[N + 24].note} /> },
+        { id: 26, note: Notes[N + 26].note, button: <Button N={N + 26} Note={Notes[N + 26].note} /> },
+        { id: 28, note: Notes[N + 28].note, button: <Button N={N + 28} Note={Notes[N + 28].note} /> },
+        { id: 29, note: Notes[N + 29].note, button: <Button N={N + 29} Note={Notes[N + 29].note} /> },
+        { id: 31, note: Notes[N + 31].note, button: <Button N={N + 31} Note={Notes[N + 31].note} /> },
+        { id: 33, note: Notes[N + 33].note, button: <Button N={N + 33} Note={Notes[N + 33].note} /> },
+        { id: 35, note: Notes[N + 35].note, button: <Button N={N + 35} Note={Notes[N + 35].note} /> },
     ]
 
     
-
     const [n1, setN1] = useState(7)
     const [n2, setN2] = useState(7)
     const [n3, setN3] = useState(7)
@@ -56,6 +55,8 @@ export default props => {
     const [n10, setN10] = useState(7)
     const [n11, setN11] = useState(7)
     const [n12, setN12] = useState(7)
+
+    const ns = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12]
 
     return (<>
 
@@ -158,103 +159,41 @@ export default props => {
         {props.Tonica === Notas[n1].note &&
             <>{/* Quando a primeira é a tonica  */}
                 <div className="resultVoices"><div className="voz">Terca</div>
-                    
-                    <div>{Notas[n1 + 2].button}</div>
-                    <div>{Notas[n2 + 2].button}</div>
-                    <div>{Notas[n3 + 2].button}</div>
-                    <div>{Notas[n4 + 2].button}</div>
-                    <div>{Notas[n5 + 2].button}</div>
-                    <div>{Notas[n6 + 2].button}</div>
-                    <div>{Notas[n7 + 2].button}</div>
-                    <div>{Notas[n8 + 2].button}</div>
-                    <div>{Notas[n9 + 2].button}</div>
-                    <div>{Notas[n10 + 2].button}</div>
-                    <div>{Notas[n11+ 2].button}</div>
-                    <div>{Notas[n12 + 2].button}</div>
+                    {ns.map((element) =>
+                        <div>{Notas[element + 2].button}</div>
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">Quinta</div>
+                    {ns.map((element) =>
+                        <div>{Notas[element + 4].button}</div>
+                    )}
                     
-                    <div>{Notas[n1 + 4].button}</div>
-                    <div>{Notas[n2 + 4].button}</div>
-                    <div>{Notas[n3 + 4].button}</div>
-                    <div>{Notas[n4 + 4].button}</div>
-                    <div>{Notas[n5 + 4].button}</div>
-                    <div>{Notas[n6 + 4].button}</div>
-                    <div>{Notas[n7 + 4].button}</div>
-                    <div>{Notas[n8 + 4].button}</div>
-                    <div>{Notas[n9 + 4].button}</div>
-                    <div>{Notas[n10 + 4].button}</div>
-                    <div>{Notas[n11+ 4].button}</div>
-                    <div>{Notas[n12 + 4].button}</div>
                 </div>
                 <div className="resultVoices"><div className="voz">T e 3</div>
                     
+                    {ns.map((element) =>
                     <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 + 2].id)}>T3</button>
+                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element + 2].id)}>T3</button>
                     </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + (Notas[n2 + 2].id))}>T3</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + (Notas[n3 + 2].id))}>T3</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + (Notas[n4 + 2].id))}>T3</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + (Notas[n5 + 2].id))}>T3</button>
-                    </div>
-
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">T e 5</div>
-                    
+                    {ns.map((element) =>
                     <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 + 4].id)}>T5</button>
+                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element + 4].id)}>T5</button>
                     </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + (Notas[n2 + 4].id))}>T5</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + (Notas[n3 + 4].id))}>T5</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + (Notas[n4 + 4].id))}>T5</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + (Notas[n5 + 4].id))}>T5</button>
-                    </div>
-
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">Acordes</div>
-                    
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 + 2].id) & playKey(4 * 12 + Notas[n1 + 4].id)}>T35</button>
-                    </div>
+                    {ns.map((element) =>
 
                     <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + Notas[n2 + 2].id) & playKey(4 * 12 + (Notas[n2 + 4].id))}>T35</button>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element + 2].id) &
+                                playKey(4 * 12 + Notas[element + 4].id)}>T35</button>
                     </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + Notas[n3 + 2].id) & playKey(4 * 12 + (Notas[n3 + 4].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + Notas[n4 + 2].id) & playKey(4 * 12 + (Notas[n4 + 4].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + Notas[n5 + 2].id) & playKey(4 * 12 + (Notas[n5 + 4].id))}>T35</button>
-                    </div>
-
+                    )}
                 </div>
             </>
         }
@@ -262,88 +201,38 @@ export default props => {
         {Notas[2].note === Notas[n1].note &&
             <>{/* Quando a primeira é a terça */}
                 <div className="resultVoices"><div className="voz">Tonica</div>
-                    
-                    <div>{Notas[n1 - 2].button}</div>
-                    <div>{Notas[n2 - 2].button}</div>
-                    <div>{Notas[n3 - 2].button}</div>
-                    <div>{Notas[n4 - 2].button}</div>
-                    <div>{Notas[n5 - 2].button}</div>
+                    {ns.map((element) =>
+                        <div>{Notas[element - 2].button}</div>
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">Quinta</div>
-                    
-                    <div>{Notas[n1 + 2].button}</div>
-                    <div>{Notas[n2 + 2].button}</div>
-                    <div>{Notas[n3 + 2].button}</div>
-                    <div>{Notas[n4 + 2].button}</div>
-                    <div>{Notas[n5 + 2].button}</div>
+                    {ns.map((element) =>
+                        <div>{Notas[element + 2].button}</div>
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">3 e T</div> 
-                    
+                    {ns.map((element) =>
                     <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 - 2].id)}>3T</button>
+                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element - 2].id)}>3T</button>
                     </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + (Notas[n2 - 2].id))}>3T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + (Notas[n3 - 2].id))}>3T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + (Notas[n4 - 2].id))}>3T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + (Notas[n5 - 2].id))}>3T</button>
-                    </div>
-
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">3 e 5</div>
-                    
+                    {ns.map((element) =>
                     <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 + 2].id)}>35</button>
+                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element + 2].id)}>35</button>
                     </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + (Notas[n2 + 2].id))}>35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + (Notas[n3 + 2].id))}>35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + (Notas[n4 + 2].id))}>35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + (Notas[n5 + 2].id))}>35</button>
-                    </div>
-
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">Acordes</div>
-                    
+                    {ns.map((element) =>
                     <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 + 2].id) & playKey(4 * 12 + Notas[n1 - 2].id)}>T35</button>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element + 2].id) &
+                                playKey(4 * 12 + Notas[element - 2].id)}>T35</button>
                     </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + Notas[n2 + 2].id) & playKey(4 * 12 + (Notas[n2 - 2].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + Notas[n3 + 2].id) & playKey(4 * 12 + (Notas[n3 - 2].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + Notas[n4 + 2].id) & playKey(4 * 12 + (Notas[n4 - 2].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + Notas[n5 + 2].id) & playKey(4 * 12 + (Notas[n5 - 2].id))}>T35</button>
-                    </div>
+                    )}
                 </div>
             </>
         }

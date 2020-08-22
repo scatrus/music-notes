@@ -150,6 +150,8 @@ export default (props) => {
         {props.Scale === "JÔNICO" ? <>
         {/* <button onClick={()=>player.cancelQueue(audioContext)}>Stop</button> */}
             <div className="selected" onClick={() => 
+
+            
                 setTimeout(() => playKey(4 * 12 + (N)), 0) &
                 setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                 setTimeout(() => playKey(4 * 12 + (N + 4)), 1000) &

@@ -1,26 +1,28 @@
 import React from 'react'
 import Notes from '../data/notes'
+import Button from  './Button'
 
 export default props => {
 
     /* eslint-disable */
 
     const result = Notes.find(n1 => n1.note === props.Tonica);
-
     const N = result.id
-    const bT = <button onClick={() => playKey(4 * 12 + (N))}>{props.Tonica}</button>
-    const b2 = <button onClick={() => playKey(4 * 12 + (N + 1))}>{Notes[N + 1].note}</button>
-    const b3 = <button onClick={() => playKey(4 * 12 + (N + 2))}>{Notes[N + 2].note}</button>
-    const b4 = <button onClick={() => playKey(4 * 12 + (N + 3))}>{Notes[N + 3].note}</button>
-    const b5 = <button onClick={() => playKey(4 * 12 + (N + 4))}>{Notes[N + 4].note}</button>
-    const b6 = <button onClick={() => playKey(4 * 12 + (N + 5))}>{Notes[N + 5].note}</button>
-    const b7 = <button onClick={() => playKey(4 * 12 + (N + 6))}>{Notes[N + 6].note}</button>
-    const b8 = <button onClick={() => playKey(4 * 12 + (N + 7))}>{Notes[N + 7].note}</button>
-    const b9 = <button onClick={() => playKey(4 * 12 + (N + 8))}>{Notes[N + 8].note}</button>
-    const b10 = <button onClick={() => playKey(4 * 12 + (N + 9))}>{Notes[N + 9].note}</button>
-    const b11 = <button onClick={() => playKey(4 * 12 + (N + 10))}>{Notes[N + 10].note}</button>
-    const b12 = <button onClick={() => playKey(4 * 12 + (N + 11))}>{Notes[N + 11].note}</button>
-    const b13 = <button onClick={() => playKey(4 * 12 + (N + 12))}>{Notes[N + 12].note}</button>
+
+
+    const bT = <Button N = {N} Note = {props.Tonica} />
+    const b2 = <Button N = {N + 1} Note = {Notes[N + 1].note} />
+    const b3 = <Button N = {N + 2} Note = {Notes[N + 2].note} />
+    const b4 = <Button N = {N + 3} Note = {Notes[N + 3].note} />
+    const b5 = <Button N = {N + 4} Note = {Notes[N + 4].note} />
+    const b6 = <Button N = {N + 5} Note = {Notes[N + 5].note} />
+    const b7 = <Button N = {N + 6} Note = {Notes[N + 6].note} />
+    const b8 = <Button N = {N + 7} Note = {Notes[N + 7].note} />
+    const b9 = <Button N = {N + 8} Note = {Notes[N + 8].note} />
+    const b10 = <Button N = {N + 9} Note = {Notes[N + 9].note} />
+    const b11 = <Button N = {N + 10} Note = {Notes[N + 10].note} />
+    const b12 = <Button N = {N + 11} Note = {Notes[N + 11].note} />
+    const b13 = <Button N = {N + 12} Note = {Notes[N + 12].note} />
 
     return (
 

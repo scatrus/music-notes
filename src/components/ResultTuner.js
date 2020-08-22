@@ -1,20 +1,21 @@
 import React from 'react'
+import Button from './Button'
 
 export default props => {
 
-
     /* eslint-disable */
 
-    const E1 = <button onClick={() => playKey(4 * 12 + 28-12)}>E</button>
-    const D1 = <button onClick={() => playKey(4 * 12 + 26-12)}>D</button>
-    const B = <button onClick={() => playKey(4 * 12 + 23-12)}>B</button>
-    const A1 = <button onClick={() => playKey(4 * 12 + 21-12)}>A</button>
-    const G = <button onClick={() => playKey(4 * 12 + 19-12)}>G</button>
-    const Fsust = <button onClick={() => playKey(4 * 12 + 18-12)}>F#</button>
-    const D = <button onClick={() => playKey(4 * 12 + 14-12)}>D</button>
-    const A = <button onClick={() => playKey(4 * 12 + 9-12)}>A</button>
-    const E2 = <button onClick={() => playKey(4 * 12 + 4-12)}>E</button>
-    const D2 = <button onClick={() => playKey(4 * 12 + 2-12)}>D</button>
+    const E1 = <Button N = {28-12} Note = "E" />
+    const D1 = <Button N = {26-12} Note = "D" />
+    const B = <Button N = {23-12} Note = "B" />
+    const A1 = <Button N = {21-12} Note = "A" />
+    const G = <Button N = {19-12} Note = "G" />
+    const Fsust = <Button N = {18-12} Note = "F#" />
+    const D = <Button N = {14-12} Note = "D" />
+    const A = <Button N = {9-12} Note = "A" />
+    const E2 = <Button N = {4-12} Note = "E" />
+    const D2 = <Button N = {2-12} Note = "D" />
+
 
     return (
         <div className="result">

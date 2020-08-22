@@ -1,29 +1,28 @@
 import React from 'react'
 import Notes from '../data/notes'
+import Button from './Button';
 
 export default props => {
-
 
     /* eslint-disable */
     const result = Notes.find(n1 => n1.note === props.Tonica);
 
     const N = result.id
-    const bT = <button onClick={() => playKey(4 * 12 + (N))}>{props.Tonica}</button>
-    const b3M = <button onClick={() => playKey(4 * 12 + (N + 4))}>{Notes[N + 4].note}</button>
+    const bT = <Button N = {N} Note = {props.Tonica} />
+    const b3M = <Button N = {N + 4} Note = {Notes[N + 4].note} />
 
     const nb3m = Notes[N + 4].note + 'b'
     var r = nb3m.replace("#b", "")
-    const b3m = <button onClick={() => playKey(4 * 12 + (N + 3))}>{r}</button>
+    const b3m = <Button N = {N + 3} Note = {r} />
 
-    const b5J = <button onClick={() => playKey(4 * 12 + (N + 7))}>{Notes[N + 7].note}</button>
-    const b7M = <button onClick={() => playKey(4 * 12 + (N + 11))}>{Notes[N + 11].note}</button>
+    const b5J = <Button N = {N + 7} Note = {Notes[N + 7].note} />
+    const b7M = <Button N = {N + 11} Note = {Notes[N + 11].note} />
 
-    const b9 = <button onClick={() => playKey(4 * 12 + (N + 14))}>{Notes[N + 14].note}</button>
-
+    const b9 = <Button N = {N + 14} Note = {Notes[N + 14].note} />
 
     const nb7m = Notes[N + 11].note + 'b'
     r = nb7m.replace("#b", "")
-    const b7m = <button onClick={() => playKey(4 * 12 + (N + 10))}>{r}</button>
+    const b7m = <Button N = {N + 10} Note = {r} />
 
     return (
         <div className="result">

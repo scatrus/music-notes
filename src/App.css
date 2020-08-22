@@ -250,8 +250,6 @@ h3, span {
 
 .resultVoices {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
   align-items: center;
 }
 
@@ -268,6 +266,11 @@ h3, span {
   background: var(--color-button-text);
 }
 
+.resultVoices button:hover {
+  background: var(--color-button-light);
+  color: var(--color-button-text);
+}
+
 .resultVoices .subB {
   padding: 0 1.6rem;
   width: 2rem;
@@ -277,7 +280,12 @@ h3, span {
   font: 700 rem Roboto;
   transition: 0.2s;
   margin: 0 auto;
-
   
   background: var(--color-button-text);
+}
+
+.voz{
+  width: 100px;
+  text-align-last: center;
+  font-weight: bolder;
 }

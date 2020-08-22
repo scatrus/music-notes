@@ -339,12 +339,12 @@ export default (props) => {
         {props.tuner === "E" ? <>
 
             <div className="selected" onClick={() =>
-                setTimeout(() => playKey(4 * 12 + 4-12), 0) &
-                setTimeout(() => playKey(4 * 12 + 9-12), 100) &
-                setTimeout(() => playKey(4 * 12 + 14-12), 200) &
-                setTimeout(() => playKey(4 * 12 + 19-12), 300) &
-                setTimeout(() => playKey(4 * 12 + 23-12), 400) &
-                setTimeout(() => playKey(4 * 12 + 28-12), 500)
+                setTimeout(() => playKey(3 * 12 + 4), 0) &
+                setTimeout(() => playKey(3 * 12 + 9), 100) &
+                setTimeout(() => playKey(3 * 12 + 14), 200) &
+                setTimeout(() => playKey(3 * 12 + 19), 300) &
+                setTimeout(() => playKey(3 * 12 + 23), 400) &
+                setTimeout(() => playKey(3 * 12 + 28), 500)
             }>
                 <span>E</span>
             </div>
@@ -356,12 +356,12 @@ export default (props) => {
         {props.tuner === "D" ? <>
 
             <div className="selected" onClick={() =>
-                setTimeout(() => playKey(4 * 12 + 2-12), 0) &
-                setTimeout(() => playKey(4 * 12 + 9-12), 100) &
-                setTimeout(() => playKey(4 * 12 + 14-12), 200) &
-                setTimeout(() => playKey(4 * 12 + 19-12), 300) &
-                setTimeout(() => playKey(4 * 12 + 21-12), 400) &
-                setTimeout(() => playKey(4 * 12 + 26-12), 500)
+                setTimeout(() => playKey(3 * 12 + 2), 0) &
+                setTimeout(() => playKey(3 * 12 + 9), 100) &
+                setTimeout(() => playKey(3 * 12 + 14), 200) &
+                setTimeout(() => playKey(3 * 12 + 18), 300) &
+                setTimeout(() => playKey(3 * 12 + 21), 400) &
+                setTimeout(() => playKey(3 * 12 + 26), 500)
             }>
                 <span>D</span>
             </div>
@@ -371,10 +371,6 @@ export default (props) => {
         }
 
     </>)
-
-
-
-
 
 }
 

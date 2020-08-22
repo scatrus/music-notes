@@ -8,6 +8,7 @@ export default props => {
     const result = Notes.find(n1 => n1.note === props.Tonica);
 
     const N = result.id
+
     const bT = <Button N = {N} Note = {props.Tonica} />
     const b3M = <Button N = {N + 4} Note = {Notes[N + 4].note} />
 

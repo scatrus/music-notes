@@ -42,7 +42,7 @@ export default props => {
         { id: 35, note: Notes[N + 35].note, button: <Button N={N + 35} Note={Notes[N + 35].note} /> },
     ]
 
-    
+
     const [n1, setN1] = useState(7)
     const [n2, setN2] = useState(7)
     const [n3, setN3] = useState(7)
@@ -167,32 +167,36 @@ export default props => {
                     {ns.map((element) =>
                         <div>{Notas[element + 4].button}</div>
                     )}
-                    
+
                 </div>
                 <div className="resultVoices"><div className="voz">T e 3</div>
-                    
+
                     {ns.map((element) =>
-                    <div>
-                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element + 2].id)}>T3</button>
-                    </div>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element + 2].id)}>T3</button>
+                        </div>
                     )}
                 </div>
                 <div className="resultVoices"><div className="voz">T e 5</div>
                     {ns.map((element) =>
-                    <div>
-                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element + 4].id)}>T5</button>
-                    </div>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element + 4].id)}>T5</button>
+                        </div>
                     )}
                 </div>
                 <div className="resultVoices"><div className="voz">Acordes</div>
                     {ns.map((element) =>
 
-                    <div>
+                        <div>
                             <button onClick={() =>
                                 playKey(4 * 12 + Notas[element].id) &
                                 playKey(4 * 12 + Notas[element + 2].id) &
                                 playKey(4 * 12 + Notas[element + 4].id)}>T35</button>
-                    </div>
+                        </div>
                     )}
                 </div>
             </>
@@ -210,28 +214,32 @@ export default props => {
                         <div>{Notas[element + 2].button}</div>
                     )}
                 </div>
-                <div className="resultVoices"><div className="voz">3 e T</div> 
+                <div className="resultVoices"><div className="voz">3 e T</div>
                     {ns.map((element) =>
-                    <div>
-                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element - 2].id)}>3T</button>
-                    </div>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element - 2].id)}>3T</button>
+                        </div>
                     )}
                 </div>
                 <div className="resultVoices"><div className="voz">3 e 5</div>
                     {ns.map((element) =>
-                    <div>
-                            <button onClick={() => playKey(4 * 12 + Notas[element].id) & playKey(4 * 12 + Notas[element + 2].id)}>35</button>
-                    </div>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element + 2].id)}>35</button>
+                        </div>
                     )}
                 </div>
                 <div className="resultVoices"><div className="voz">Acordes</div>
                     {ns.map((element) =>
-                    <div>
+                        <div>
                             <button onClick={() =>
                                 playKey(4 * 12 + Notas[element].id) &
                                 playKey(4 * 12 + Notas[element + 2].id) &
                                 playKey(4 * 12 + Notas[element - 2].id)}>T35</button>
-                    </div>
+                        </div>
                     )}
                 </div>
             </>
@@ -240,90 +248,48 @@ export default props => {
         {Notas[4].note === Notas[n1].note &&
             <>{/* Quando a primeira é a quinta */}
                 <div className="resultVoices"><div className="voz">Tonica</div>
-                    
-                    <div>{Notas[n1 - 4].button}</div>
-                    <div>{Notas[n2 - 4].button}</div>
-                    <div>{Notas[n3 - 4].button}</div>
-                    <div>{Notas[n4 - 4].button}</div>
-                    <div>{Notas[n5 - 4].button}</div>
+
+                    {ns.map((element) =>
+                        <div>{Notas[element - 4].button}</div>
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">Terça</div>
-                    
-                    <div>{Notas[n1 - 2].button}</div>
-                    <div>{Notas[n2 - 2].button}</div>
-                    <div>{Notas[n3 - 2].button}</div>
-                    <div>{Notas[n4 - 2].button}</div>
-                    <div>{Notas[n5 - 2].button}</div>
+
+                    {ns.map((element) =>
+                        <div>{Notas[element - 2].button}</div>
+                    )}
                 </div>
                 <div className="resultVoices"><div className="voz">5 e 3</div>
-                    
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 - 2].id)}>53</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + (Notas[n2 - 2].id))}>53</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + (Notas[n3 - 2].id))}>53</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + (Notas[n4 - 2].id))}>53</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + (Notas[n5 - 2].id))}>53</button>
-                    </div>
+                    {ns.map((element) =>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element - 2].id)}>53</button>
+                        </div>
+                    )}
 
                 </div>
                 <div className="resultVoices"><div className="voz">5 e T</div>
-                    
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 - 4].id)}>5T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + (Notas[n2 - 4].id))}>5T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + (Notas[n3 - 4].id))}>5T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + (Notas[n4 - 4].id))}>5T</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + (Notas[n5 - 4].id))}>5T</button>
-                    </div>
+                    {ns.map((element) =>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element - 4].id)}>5T</button>
+                        </div>
+                    )}
 
                 </div>
                 <div className="resultVoices"><div className="voz">Acordes</div>
-                    
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n1].id) & playKey(4 * 12 + Notas[n1 - 2].id) & playKey(4 * 12 + Notas[n1 - 4].id)}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n2].id) & playKey(4 * 12 + Notas[n2 - 2].id) & playKey(4 * 12 + (Notas[n2 - 4].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n3].id) & playKey(4 * 12 + Notas[n3 - 2].id) & playKey(4 * 12 + (Notas[n3 - 4].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n4].id) & playKey(4 * 12 + Notas[n4 - 2].id) & playKey(4 * 12 + (Notas[n4 - 4].id))}>T35</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => playKey(4 * 12 + Notas[n5].id) & playKey(4 * 12 + Notas[n5 - 2].id) & playKey(4 * 12 + (Notas[n5 - 4].id))}>T35</button>
-                    </div>
+                    {ns.map((element) =>
+                        <div>
+                            <button onClick={() =>
+                                playKey(4 * 12 + Notas[element].id) &
+                                playKey(4 * 12 + Notas[element - 2].id) &
+                                playKey(4 * 12 + Notas[element - 4].id)}>T35</button>
+                        </div>
+                    )}
                 </div>
-            
+
             </>
         }
     </>

@@ -2,42 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="♫♪ Learning music ♫♪" />
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#4285f4" />
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="♫♪ Learning music ♫♪"/>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4285f4"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
-  <script src='https://surikov.github.io/webaudiofontdata/sound/0000_Aspirin_sf2_file.js'></script>
-  <script>
-    var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
-    var audioContext = new AudioContextFunc();
-    var player = new WebAudioFontPlayer();
-    player.loader.decodeAfterLoading(audioContext, '_tone_0000_Aspirin_sf2_file');
-    function playKey(pitch) {
-      player.queueWaveTable(audioContext, audioContext.destination, _tone_0000_Aspirin_sf2_file, 0, pitch, 1);
-      
-    }
-    function stop() {
-      player.cancelQueue(audioContext);
-      
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
+    <script src='https://surikov.github.io/webaudiofontdata/sound/0000_Aspirin_sf2_file.js'></script>
+    <script>
+        var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
+        var audioContext = new AudioContextFunc();
+        var player = new WebAudioFontPlayer();
+        player.loader.decodeAfterLoading(audioContext, '_tone_0000_Aspirin_sf2_file');
 
-    
+        function playKey(pitch) {
+            player.queueWaveTable(audioContext, audioContext.destination, _tone_0000_Aspirin_sf2_file, 0, pitch, 1);
+
+        }
+
+        function stop() {
+            player.cancelQueue(audioContext);
+
+        }
 
 
-  </script>
+    </script>
 
-  <title>Music Notes</title>
+    <title>Music Notes</title>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
 
 </body>
 

@@ -340,7 +340,7 @@ export default (props) => {
 
         {props.tuner === "E" ? <>
 
-                <div className="selected" onClick={() =>
+                <div className="selected" onClick={() => 
                     setTimeout(() => playKey(3 * 12 + 4), 0) &
                     setTimeout(() => playKey(3 * 12 + 9), 100) &
                     setTimeout(() => playKey(3 * 12 + 14), 200) &

@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8"/>
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#000000"/>
-    <meta name="description" content="♫♪ Learning music ♫♪"/>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="♫♪ Learning music ♫♪" />
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#4285f4"/>
+    <meta name="theme-color" content="#4285f4" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
-    <script src='https://surikov.github.io/webaudiofontdata/sound/0240_Chaos_sf2_file.js'></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js"></script>
+    <script src="https://surikov.github.io/webaudiofontdata/sound/0250_Acoustic_Guitar_sf2_file.js"></script>
     <script>
-        var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
-        var audioContext = new AudioContextFunc();
-        var player = new WebAudioFontPlayer();
-        player.loader.decodeAfterLoading(audioContext, '_tone_0240_Chaos_sf2_file');
+      var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
+      var audioContext = new AudioContextFunc();
+      var player = new WebAudioFontPlayer();
+      player.loader.decodeAfterLoading(
+        audioContext,
+        "_tone_0250_Acoustic_Guitar_sf2_file"
+      );
 
-        function playKey(pitch) {
-            player.queueWaveTable(audioContext, audioContext.destination, _tone_0240_Chaos_sf2_file, 1, pitch, 0.5);
+      function playKey(pitch) {
+        player.queueWaveTable(
+          audioContext,
+          audioContext.destination,
+          _tone_0250_Acoustic_Guitar_sf2_file,
+          1,
+          pitch,
+          1000
+        );
+      }
 
-        }
-
-        function stop() {
-            player.cancelQueue(audioContext);
-
-        }
-
-
+      function stop() {
+        player.cancelQueue(audioContext);
+      }
     </script>
 
     <title>Music Notes</title>
-</head>
+  </head>
 
-<body>
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root"></div>
-
-</body>
-
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>

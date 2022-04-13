@@ -25,6 +25,7 @@
       );
 
       function playKey(pitch) {
+        stop();
         player.queueWaveTable(
           audioContext,
           audioContext.destination,
@@ -33,6 +34,7 @@
           pitch,
           1000
         );
+        return false;
       }
 
       function stop() {

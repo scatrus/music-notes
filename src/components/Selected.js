@@ -9,7 +9,7 @@ export default (props) => {
     return (<>
         {props.chord === "M" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 4)) &
                     playKey(4 * 12 + (N + 7)) &
                     setTimeout(() => playKey(4 * 12 + (N)), 1000) &
@@ -25,7 +25,7 @@ export default (props) => {
 
         {props.chord === "m" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 3)) &
                     playKey(4 * 12 + (N + 7)) &
                     setTimeout(() => playKey(4 * 12 + (N)), 1000) &
@@ -41,7 +41,7 @@ export default (props) => {
 
         {props.chord === "7" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 4)) &
                     playKey(4 * 12 + (N + 7)) &
                     playKey(4 * 12 + (N + 10)) &
@@ -59,7 +59,7 @@ export default (props) => {
 
         {props.chord === "7M" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 4)) &
                     playKey(4 * 12 + (N + 7)) &
                     playKey(4 * 12 + (N + 11)) &
@@ -77,7 +77,7 @@ export default (props) => {
 
         {props.chord === "m7M" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 3)) &
                     playKey(4 * 12 + (N + 7)) &
                     playKey(4 * 12 + (N + 11)) &
@@ -95,7 +95,7 @@ export default (props) => {
 
         {props.chord === "m7" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 3)) &
                     playKey(4 * 12 + (N + 7)) &
                     playKey(4 * 12 + (N + 10)) &
@@ -113,7 +113,7 @@ export default (props) => {
 
         {props.chord === "9" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 4)) &
                     playKey(4 * 12 + (N + 7)) &
                     playKey(4 * 12 + (N + 14)) &
@@ -131,7 +131,7 @@ export default (props) => {
 
         {props.chord === "m9" ? <>
 
-                <div className="selected" onClick={() => playKey(4 * 12 + (N)) &
+                <div className="selected" onClick={() => stop() & playKey(4 * 12 + (N)) &
                     playKey(4 * 12 + (N + 3)) &
                     playKey(4 * 12 + (N + 7)) &
                     playKey(4 * 12 + (N + 14)) &
@@ -149,7 +149,7 @@ export default (props) => {
 
         {props.Scale === "JÔNICO" ? <>
                 {/* <button onClick={()=>player.cancelQueue(audioContext)}>Stop</button> */}
-                <div className="selected" onClick={() =>
+                <div className="selected" onClick={() => stop() & 
 
 
                     setTimeout(() => playKey(4 * 12 + (N)), 0) &
@@ -178,7 +178,7 @@ export default (props) => {
 
         {props.Scale === "DÓRICO" ? <>
 
-                <div className="selected" onClick={() =>
+                <div className="selected" onClick={() =>stop() & 
                     setTimeout(() => playKey(4 * 12 + (N)), 0) &
                     setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                     setTimeout(() => playKey(4 * 12 + (N + 3)), 1000) &
@@ -205,7 +205,7 @@ export default (props) => {
 
         {props.Scale === "FRÍGIO" ? <>
 
-                <div className="selected" onClick={() => setTimeout(() =>
+                <div className="selected" onClick={() => stop() & setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                     setTimeout(() => playKey(4 * 12 + (N + 1)), 500) &
                     setTimeout(() => playKey(4 * 12 + (N + 3)), 1000) &
@@ -232,7 +232,7 @@ export default (props) => {
 
         {props.Scale === "LÍDIO" ? <>
 
-                <div className="selected" onClick={() => setTimeout(() =>
+                <div className="selected" onClick={() => stop() & setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                     setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                     setTimeout(() => playKey(4 * 12 + (N + 4)), 1000) &
@@ -259,7 +259,7 @@ export default (props) => {
 
         {props.Scale === "MIXOLÍDIO" ? <>
 
-                <div className="selected" onClick={() => setTimeout(() =>
+                <div className="selected" onClick={() => stop() & setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                     setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                     setTimeout(() => playKey(4 * 12 + (N + 4)), 1000) &
@@ -286,7 +286,7 @@ export default (props) => {
 
         {props.Scale === "EÓLICO" ? <>
 
-                <div className="selected" onClick={() => setTimeout(() =>
+                <div className="selected" onClick={() => stop() & setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                     setTimeout(() => playKey(4 * 12 + (N + 2)), 500) &
                     setTimeout(() => playKey(4 * 12 + (N + 3)), 1000) &
@@ -313,7 +313,7 @@ export default (props) => {
 
         {props.Scale === "LÓCRIO" ? <>
 
-                <div className="selected" onClick={() => setTimeout(() =>
+                <div className="selected" onClick={() => stop() & setTimeout(() =>
                         playKey(4 * 12 + (N)), 0) &
                     setTimeout(() => playKey(4 * 12 + (N + 1)), 500) &
                     setTimeout(() => playKey(4 * 12 + (N + 3)), 1000) &
@@ -340,7 +340,7 @@ export default (props) => {
 
         {props.tuner === "E" ? <>
 
-                <div className="selected" onClick={() => 
+                <div className="selected" onClick={() => stop() & 
                     setTimeout(() => playKey(3 * 12 + 4), 0) &
                     setTimeout(() => playKey(3 * 12 + 9), 100) &
                     setTimeout(() => playKey(3 * 12 + 14), 200) &
@@ -357,7 +357,7 @@ export default (props) => {
 
         {props.tuner === "D" ? <>
 
-                <div className="selected" onClick={() =>
+                <div className="selected" onClick={() =>stop() & 
                     setTimeout(() => playKey(3 * 12 + 2), 0) &
                     setTimeout(() => playKey(3 * 12 + 9), 100) &
                     setTimeout(() => playKey(3 * 12 + 14), 200) &

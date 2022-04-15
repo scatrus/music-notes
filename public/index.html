@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js"></script>
     <script src="https://surikov.github.io/webaudiofontdata/sound/0250_Acoustic_Guitar_sf2_file.js"></script>
     <script>
@@ -25,7 +26,7 @@
       );
 
       function playKey(pitch) {
-        stop();
+        // stop();
         player.queueWaveTable(
           audioContext,
           audioContext.destination,

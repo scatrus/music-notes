@@ -18,8 +18,6 @@ var idNote = () => {
       { id: 11 + c * octave * index, note: "B", octave: octave }
     );
   }
-
-  console.log(notes);
   return notes;
 };
 export default idNote();

@@ -77,6 +77,7 @@ function App() {
           <hr />
 
           <Scale
+            key={note}
             setScale={setScale}
             setSelectedNote={setSelectedNote}
             note={note}
@@ -129,7 +130,11 @@ function App() {
       ) : (
         <></>
       )}
-      <footer>Updated at {document.lastModified}</footer>
+      <hr />
+      <br />
+      <center>
+        <footer>Version 2.0</footer>
+      </center>
     </div>
   );
 }

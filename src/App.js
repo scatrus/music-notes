@@ -129,6 +129,7 @@ function App() {
       ) : (
         <></>
       )}
+      <footer>Updated at {document.lastModified}</footer>
     </div>
   );
 }

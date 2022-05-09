@@ -25,8 +25,9 @@
         "_tone_0250_Acoustic_Guitar_sf2_file"
       );
 
-      function playKey(pitch) {
+      function playKey(idnote, octave) {
         // stop();
+        pitch = idnote + octave * 12;
         player.queueWaveTable(
           audioContext,
           audioContext.destination,

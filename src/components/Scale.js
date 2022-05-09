@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
 
-export default (props) =>
-    <div className="scale">
-        {["JÔNICO", "DÓRICO", "FRÍGIO", "LÍDIO", "MIXOLÍDIO", "EÓLICO", "LÓCRIO"].map((element) => (
-            <button
-                onClick={(e) => props.setScale(e.target.value) & props.setSelectedNote(props.note + " " + e.target.value)}
-                value={element}>{element}</button>
-        ))
+export default (props) => (
+  <div className="scale">
+    {[
+      "JÔNICO",
+      "DÓRICO",
+      "FRÍGIO",
+      "LÍDIO",
+      "MIXOLÍDIO",
+      "EÓLICO",
+      "LÓCRIO",
+    ].map((index, element) => (
+      <button
+        onClick={(e) =>
+          props.setScale(e.target.value) &
+          props.setSelectedNote(props.note + " " + e.target.value)
         }
-    </div>
+        value={index}
+      >
+        {index}
+      </button>
+    ))}
+  </div>
+);

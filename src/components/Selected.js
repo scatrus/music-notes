@@ -4,9 +4,9 @@ import Notes from "../data/notes";
 
 export default (props) => {
   const result = Notes.find((n1) => n1.note === props.Tonica);
-
+  console.log(result);
   const N = result.id;
-
+  const octave = 3;
   return (
     <>
       {props.chord === "M" ? (
@@ -15,12 +15,9 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 4) &
-              playKey(N + 7) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 4), 1200) &
-              setTimeout(() => playKey(N + 7), 1400)
+              playKey(N, octave) &
+              playKey(N + 4, octave) &
+              playKey(N + 7, octave)
             }
           >
             <span>{props.note}</span>
@@ -29,19 +26,15 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "m" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 3) &
-              playKey(N + 7) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 3), 1200) &
-              setTimeout(() => playKey(N + 7), 1400)
+              playKey(N, octave) &
+              playKey(N + 3, octave) &
+              playKey(N + 7, octave)
             }
           >
             <span> {props.note}</span>
@@ -50,21 +43,16 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "7" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 4) &
-              playKey(N + 7) &
-              playKey(N + 10) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 4), 1200) &
-              setTimeout(() => playKey(N + 7), 1400) &
-              setTimeout(() => playKey(N + 10), 1600)
+              playKey(N, octave) &
+              playKey(N + 4, octave) &
+              playKey(N + 7, octave) &
+              playKey(N + 10, octave)
             }
           >
             <span> {props.note}</span>
@@ -73,21 +61,16 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "7M" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 4) &
-              playKey(N + 7) &
-              playKey(N + 11) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 4), 1200) &
-              setTimeout(() => playKey(N + 7), 1400) &
-              setTimeout(() => playKey(N + 11), 1600)
+              playKey(N, octave) &
+              playKey(N + 4, octave) &
+              playKey(N + 7, octave) &
+              playKey(N + 11, octave)
             }
           >
             <span> {props.note}</span>
@@ -96,21 +79,16 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "m7M" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 3) &
-              playKey(N + 7) &
-              playKey(N + 11) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 3), 1200) &
-              setTimeout(() => playKey(N + 7), 1400) &
-              setTimeout(() => playKey(N + 11), 1600)
+              playKey(N, octave) &
+              playKey(N + 3, octave) &
+              playKey(N + 7, octave) &
+              playKey(N + 11, octave)
             }
           >
             <span> {props.note}</span>
@@ -119,21 +97,16 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "m7" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 3) &
-              playKey(N + 7) &
-              playKey(N + 10) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 3), 1200) &
-              setTimeout(() => playKey(N + 7), 1400) &
-              setTimeout(() => playKey(N + 10), 1600)
+              playKey(N, octave) &
+              playKey(N + 3, octave) &
+              playKey(N + 7, octave) &
+              playKey(N + 10, octave)
             }
           >
             <span> {props.note}</span>
@@ -142,21 +115,16 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "9" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 4) &
-              playKey(N + 7) &
-              playKey(N + 14) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 4), 1200) &
-              setTimeout(() => playKey(N + 7), 1400) &
-              setTimeout(() => playKey(N + 14), 1600)
+              playKey(N, octave) &
+              playKey(N + 4, octave) &
+              playKey(N + 7, octave) &
+              playKey(N + 14, octave)
             }
           >
             <span> {props.note}</span>
@@ -165,21 +133,16 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.chord === "m9" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              playKey(N) &
-              playKey(N + 3) &
-              playKey(N + 7) &
-              playKey(N + 14) &
-              setTimeout(() => playKey(N), 1000) &
-              setTimeout(() => playKey(N + 3), 1200) &
-              setTimeout(() => playKey(N + 7), 1400) &
-              setTimeout(() => playKey(N + 14), 1600)
+              playKey(N, octave) &
+              playKey(N + 3, octave) &
+              playKey(N + 7, octave) &
+              playKey(N + 14, octave)
             }
           >
             <span> {props.note}</span>
@@ -188,7 +151,24 @@ export default (props) => {
       ) : (
         <></>
       )}
-
+      {props.chord === "°" ? (
+        <>
+          <div
+            className="selected"
+            onClick={() =>
+              stop() &
+              playKey(N, octave) &
+              playKey(N + 3, octave) &
+              playKey(N + 6, octave) &
+              playKey(N + 9, octave)
+            }
+          >
+            <span> {props.note}</span>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
       {props.Scale === "JÔNICO" ? (
         <>
           {/* <button onClick={()=>player.cancelQueue(audioContext)}>Stop</button> */}
@@ -196,21 +176,14 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 2), 500) &
-              setTimeout(() => playKey(N + 4), 1000) &
-              setTimeout(() => playKey(N + 5), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 9), 2500) &
-              setTimeout(() => playKey(N + 11), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 2), 4000) &
-              setTimeout(() => playKey(N + 4), 4200) &
-              setTimeout(() => playKey(N + 5), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 9), 4800) &
-              setTimeout(() => playKey(N + 11), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 4, octave), 400) &
+              setTimeout(() => playKey(N + 5, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 9, octave), 1000) &
+              setTimeout(() => playKey(N + 11, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -226,21 +199,14 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 2), 500) &
-              setTimeout(() => playKey(N + 3), 1000) &
-              setTimeout(() => playKey(N + 5), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 9), 2500) &
-              setTimeout(() => playKey(N + 10), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 2), 4000) &
-              setTimeout(() => playKey(N + 3), 4200) &
-              setTimeout(() => playKey(N + 5), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 9), 4800) &
-              setTimeout(() => playKey(N + 10), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 3, octave), 400) &
+              setTimeout(() => playKey(N + 5, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 9, octave), 1000) &
+              setTimeout(() => playKey(N + 10, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -249,28 +215,20 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.Scale === "FRÍGIO" ? (
         <>
           <div
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 1), 500) &
-              setTimeout(() => playKey(N + 3), 1000) &
-              setTimeout(() => playKey(N + 5), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 8), 2500) &
-              setTimeout(() => playKey(N + 10), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 1), 4000) &
-              setTimeout(() => playKey(N + 3), 4200) &
-              setTimeout(() => playKey(N + 5), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 8), 4800) &
-              setTimeout(() => playKey(N + 10), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 1, octave), 500) &
+              setTimeout(() => playKey(N + 3, octave), 1000) &
+              setTimeout(() => playKey(N + 5, octave), 1500) &
+              setTimeout(() => playKey(N + 7, octave), 2000) &
+              setTimeout(() => playKey(N + 8, octave), 2500) &
+              setTimeout(() => playKey(N + 10, octave), 3000) &
+              setTimeout(() => playKey(N + 12, octave), 3500)
             }
           >
             <span> {props.note}</span>
@@ -279,7 +237,6 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.Scale === "LÍDIO" ? (
         <>
           <div
@@ -309,7 +266,6 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.Scale === "MIXOLÍDIO" ? (
         <>
           <div
@@ -339,7 +295,6 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.Scale === "EÓLICO" ? (
         <>
           <div
@@ -369,7 +324,6 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.Scale === "LÓCRIO" ? (
         <>
           <div
@@ -399,7 +353,6 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.tuner === "E" ? (
         <>
           <div
@@ -420,7 +373,6 @@ export default (props) => {
       ) : (
         <></>
       )}
-
       {props.tuner === "D" ? (
         <>
           <div

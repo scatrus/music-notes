@@ -222,13 +222,13 @@ export default (props) => {
             onClick={() =>
               stop() &
               setTimeout(() => playKey(N, octave), 0) &
-              setTimeout(() => playKey(N + 1, octave), 500) &
-              setTimeout(() => playKey(N + 3, octave), 1000) &
-              setTimeout(() => playKey(N + 5, octave), 1500) &
-              setTimeout(() => playKey(N + 7, octave), 2000) &
-              setTimeout(() => playKey(N + 8, octave), 2500) &
-              setTimeout(() => playKey(N + 10, octave), 3000) &
-              setTimeout(() => playKey(N + 12, octave), 3500)
+              setTimeout(() => playKey(N + 1, octave), 200) &
+              setTimeout(() => playKey(N + 3, octave), 400) &
+              setTimeout(() => playKey(N + 5, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 8, octave), 1000) &
+              setTimeout(() => playKey(N + 10, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -243,21 +243,14 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 2), 500) &
-              setTimeout(() => playKey(N + 4), 1000) &
-              setTimeout(() => playKey(N + 6), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 9), 2500) &
-              setTimeout(() => playKey(N + 11), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 2), 4000) &
-              setTimeout(() => playKey(N + 4), 4200) &
-              setTimeout(() => playKey(N + 6), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 9), 4800) &
-              setTimeout(() => playKey(N + 11), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 4, octave), 400) &
+              setTimeout(() => playKey(N + 6, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 9, octave), 1000) &
+              setTimeout(() => playKey(N + 11, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -272,21 +265,14 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 2), 500) &
-              setTimeout(() => playKey(N + 4), 1000) &
-              setTimeout(() => playKey(N + 5), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 9), 2500) &
-              setTimeout(() => playKey(N + 10), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 2), 4000) &
-              setTimeout(() => playKey(N + 4), 4200) &
-              setTimeout(() => playKey(N + 5), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 9), 4800) &
-              setTimeout(() => playKey(N + 10), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 4, octave), 400) &
+              setTimeout(() => playKey(N + 5, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 9, octave), 1000) &
+              setTimeout(() => playKey(N + 10, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -301,21 +287,14 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 2), 500) &
-              setTimeout(() => playKey(N + 3), 1000) &
-              setTimeout(() => playKey(N + 5), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 8), 2500) &
-              setTimeout(() => playKey(N + 10), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 2), 4000) &
-              setTimeout(() => playKey(N + 3), 4200) &
-              setTimeout(() => playKey(N + 5), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 8), 4800) &
-              setTimeout(() => playKey(N + 10), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 3, octave), 400) &
+              setTimeout(() => playKey(N + 5, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 8, octave), 1000) &
+              setTimeout(() => playKey(N + 10, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -330,21 +309,14 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(N), 0) &
-              setTimeout(() => playKey(N + 1), 500) &
-              setTimeout(() => playKey(N + 3), 1000) &
-              setTimeout(() => playKey(N + 5), 1500) &
-              setTimeout(() => playKey(N + 7), 2000) &
-              setTimeout(() => playKey(N + 8), 2500) &
-              setTimeout(() => playKey(N + 10), 3000) &
-              setTimeout(() => playKey(N + 12), 3500) &
-              setTimeout(() => playKey(N + 1), 4000) &
-              setTimeout(() => playKey(N + 3), 4200) &
-              setTimeout(() => playKey(N + 5), 4400) &
-              setTimeout(() => playKey(N + 7), 4600) &
-              setTimeout(() => playKey(N + 8), 4800) &
-              setTimeout(() => playKey(N + 10), 5000) &
-              setTimeout(() => playKey(N + 12), 5200)
+              setTimeout(() => playKey(N, octave), 0) &
+              setTimeout(() => playKey(N + 1, octave), 200) &
+              setTimeout(() => playKey(N + 3, octave), 400) &
+              setTimeout(() => playKey(N + 5, octave), 600) &
+              setTimeout(() => playKey(N + 7, octave), 800) &
+              setTimeout(() => playKey(N + 8, octave), 1000) &
+              setTimeout(() => playKey(N + 10, octave), 1200) &
+              setTimeout(() => playKey(N + 12, octave), 1400)
             }
           >
             <span> {props.note}</span>
@@ -359,12 +331,12 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(3 * 12 + 4), 0) &
-              setTimeout(() => playKey(3 * 12 + 9), 100) &
-              setTimeout(() => playKey(3 * 12 + 14), 200) &
-              setTimeout(() => playKey(3 * 12 + 19), 300) &
-              setTimeout(() => playKey(3 * 12 + 23), 400) &
-              setTimeout(() => playKey(3 * 12 + 28), 500)
+              setTimeout(() => playKey(N + 4, octave - 1), 0) &
+              setTimeout(() => playKey(N + 9, octave - 1), 100) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 7, octave), 300) &
+              setTimeout(() => playKey(N + 11, octave), 400) &
+              setTimeout(() => playKey(N + 4, octave + 1), 500)
             }
           >
             <span>E</span>
@@ -379,12 +351,12 @@ export default (props) => {
             className="selected"
             onClick={() =>
               stop() &
-              setTimeout(() => playKey(3 * 12 + 2), 0) &
-              setTimeout(() => playKey(3 * 12 + 9), 100) &
-              setTimeout(() => playKey(3 * 12 + 14), 200) &
-              setTimeout(() => playKey(3 * 12 + 18), 300) &
-              setTimeout(() => playKey(3 * 12 + 21), 400) &
-              setTimeout(() => playKey(3 * 12 + 26), 500)
+              setTimeout(() => playKey(N + 2, octave - 1), 0) &
+              setTimeout(() => playKey(N + 9, octave - 1), 100) &
+              setTimeout(() => playKey(N + 2, octave), 200) &
+              setTimeout(() => playKey(N + 6, octave), 300) &
+              setTimeout(() => playKey(N + 9, octave), 400) &
+              setTimeout(() => playKey(N + 2, octave + 1), 500)
             }
           >
             <span>D</span>

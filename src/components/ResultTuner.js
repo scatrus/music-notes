@@ -3,16 +3,77 @@ import Button from "./Button";
 
 export default (props) => {
   /* eslint-disable */
-  const E1 = <Button N={props.note[4].id + 12} Note={props.note[4].note} />;
-  const B2 = <Button N={props.note[11].id} Note={props.note[11].note} />;
-  const G3 = <Button N={props.note[7].id} Note={props.note[7].note} />;
-  const D4 = <Button N={props.note[2].id} Note={props.note[2].note} />;
-  const A5 = <Button N={props.note[9].id - 12} Note={props.note[9].note} />;
-  const E6 = <Button N={props.note[4].id - 12} Note={props.note[4].note} />;
-  const D1 = <Button N={props.note[2].id + 12} Note={props.note[2].note} />;
-  const A2 = <Button N={props.note[9].id} Note={props.note[9].note} />;
-  const F3 = <Button N={props.note[6].id} Note={props.note[6].note} />;
-  const D6 = <Button N={props.note[2].id - 12} Note={props.note[2].note} />;
+  const octave = 3;
+  const E1 = (
+    <Button
+      idNote={props.note[4].id}
+      octave={octave + 1}
+      Note={props.note[4].note}
+    />
+  );
+  const B2 = (
+    <Button
+      idNote={props.note[11].id}
+      octave={octave}
+      Note={props.note[11].note}
+    />
+  );
+  const G3 = (
+    <Button
+      idNote={props.note[7].id}
+      octave={octave}
+      Note={props.note[7].note}
+    />
+  );
+  const D4 = (
+    <Button
+      idNote={props.note[2].id}
+      octave={octave}
+      Note={props.note[2].note}
+    />
+  );
+  const A5 = (
+    <Button
+      idNote={props.note[9].id}
+      octave={octave - 1}
+      Note={props.note[9].note}
+    />
+  );
+  const E6 = (
+    <Button
+      idNote={props.note[4].id}
+      octave={octave - 1}
+      Note={props.note[4].note}
+    />
+  );
+  const D1 = (
+    <Button
+      idNote={props.note[2].id}
+      octave={octave + 1}
+      Note={props.note[2].note}
+    />
+  );
+  const A2 = (
+    <Button
+      idNote={props.note[9].id}
+      octave={octave}
+      Note={props.note[9].note}
+    />
+  );
+  const F3 = (
+    <Button
+      idNote={props.note[6].id}
+      octave={octave}
+      Note={props.note[6].note}
+    />
+  );
+  const D6 = (
+    <Button
+      idNote={props.note[2].id}
+      octave={octave - 1}
+      Note={props.note[2].note}
+    />
+  );
 
   return (
     <div className="result">

@@ -39,9 +39,7 @@ export default (props) => {
 
   const nb7m = Notes[N + 11].note + "b";
   r = nb7m.replace("#b", "");
-  const b7m = (
-    <Button idNote={N + 10} octave={octave} Note={Notes[N + 10].note} />
-  );
+  const b7m = <Button idNote={N + 10} octave={octave} Note={r} />;
 
   //   const b7bb = Notes[N + 9].note;
   //   console.log(nb7bb);
@@ -302,7 +300,7 @@ export default (props) => {
         <></>
       )}
 
-      {props.chord === "Ø" ? (
+      {props.chord === "m7(b5)" ? (
         <>
           <div className="resultNotes">
             <div>

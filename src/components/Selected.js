@@ -188,7 +188,7 @@ export default (props) => {
         <></>
       )}
 
-      {props.chord === "Ø" ? (
+      {props.chord === "m7(b5)" ? (
         <>
           <div
             className="selected"

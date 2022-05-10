@@ -26,6 +26,24 @@ export default (props) => {
       ) : (
         <></>
       )}
+      {props.chord === "+" ? (
+        <>
+          <div
+            className="selected"
+            onClick={() =>
+              stop() &
+              playKey(N, octave) &
+              playKey(N + 4, octave) &
+              playKey(N + 8, octave)
+            }
+          >
+            <span>{props.note}</span>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+
       {props.chord === "m" ? (
         <>
           <div
@@ -169,6 +187,26 @@ export default (props) => {
       ) : (
         <></>
       )}
+
+      {props.chord === "Ø" ? (
+        <>
+          <div
+            className="selected"
+            onClick={() =>
+              stop() &
+              playKey(N, octave) &
+              playKey(N + 3, octave) &
+              playKey(N + 6, octave) &
+              playKey(N + 10, octave)
+            }
+          >
+            <span> {props.note}</span>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+
       {props.Scale === "JÔNICO" ? (
         <>
           {/* <button onClick={()=>player.cancelQueue(audioContext)}>Stop</button> */}

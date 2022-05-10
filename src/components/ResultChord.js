@@ -25,6 +25,10 @@ export default (props) => {
     <Button idNote={N + 7} octave={octave} Note={Notes[N + 7].note} />
   );
 
+  const nb5M = Notes[N + 7].note + "#";
+  var r = nb5M.replace("##", "");
+  const b5M = <Button idNote={N + 8} octave={octave} Note={r} />;
+
   const b7M = (
     <Button idNote={N + 11} octave={octave} Note={Notes[N + 11].note} />
   );
@@ -62,6 +66,27 @@ export default (props) => {
             <div>
               {b5J}
               <h3>5J</h3>
+            </div>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+
+      {props.chord === "+" ? (
+        <>
+          <div className="resultNotes">
+            <div>
+              {bT}
+              <h3>T</h3>
+            </div>
+            <div>
+              {b3M}
+              <h3>3M</h3>
+            </div>
+            <div>
+              {b5M}
+              <h3>5#</h3>
             </div>
           </div>
         </>
@@ -270,6 +295,31 @@ export default (props) => {
             <div>
               {b7bb}
               <h3>7bb</h3>
+            </div>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+
+      {props.chord === "Ø" ? (
+        <>
+          <div className="resultNotes">
+            <div>
+              {bT}
+              <h3>T</h3>
+            </div>
+            <div>
+              {b3m}
+              <h3>3m</h3>
+            </div>
+            <div>
+              {b5b}
+              <h3>5b</h3>
+            </div>
+            <div>
+              {b7m}
+              <h3>7m</h3>
             </div>
           </div>
         </>

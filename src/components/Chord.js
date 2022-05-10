@@ -10,7 +10,7 @@ export default (props) => (
     >
       M
     </button>
-    {["m", "7M", "7", "m7", "m7M", "9", "m9", "°"].map((element) => (
+    {["+", "m", "7M", "7", "m7", "m7M", "9", "m9", "°", "Ø"].map((element) => (
       <button
         onClick={(e) =>
           props.setChord(e.target.value) &

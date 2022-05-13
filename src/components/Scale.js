@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => (
+const scale = (props) => (
   <div className="scale">
     {[
       "JÔNICO",
@@ -12,6 +12,7 @@ export default (props) => (
       "LÓCRIO",
     ].map((index, element) => (
       <button
+        key={index}
         onClick={(e) =>
           props.setScale(e.target.value) &
           props.setSelectedNote(props.note + " " + e.target.value)
@@ -23,3 +24,5 @@ export default (props) => (
     ))}
   </div>
 );
+
+export default scale;

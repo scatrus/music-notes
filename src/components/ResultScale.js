@@ -2,7 +2,7 @@ import React from "react";
 import Notes from "../data/notes";
 import Button from "./Button";
 
-export default (props) => {
+const resultScale = (props) => {
   /* eslint-disable */
 
   const result = Notes.find((n1) => n1.note === props.Tonica);
@@ -40,7 +40,7 @@ export default (props) => {
               {bT} <h3>T</h3>
             </div>
             {[b3, b5, b6, b8, b10, b12, b13].map((element, index) => (
-              <div>
+              <div key={index}>
                 {element} <h3>{index + 2}ª</h3>
               </div>
             ))}
@@ -250,3 +250,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default resultScale;

@@ -2,7 +2,7 @@ import React from "react";
 import Notes from "../data/notes";
 import Button from "./Button";
 
-export default (props) => {
+const resultChords = (props) => {
   /* eslint-disable */
   const result = Notes.find((n1) => n1.note === props.Tonica);
   const octave = 3;
@@ -41,9 +41,6 @@ export default (props) => {
   r = nb7m.replace("#b", "");
   const b7m = <Button idNote={N + 10} octave={octave} Note={r} />;
 
-  //   const b7bb = Notes[N + 9].note;
-  //   console.log(nb7bb);
-  //   r = nb7bb.replace("b", "");
   const b7bb = (
     <Button idNote={N + 9} octave={octave} Note={Notes[N + 9].note} />
   );
@@ -327,3 +324,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default resultChords;

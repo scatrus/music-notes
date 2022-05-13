@@ -4,7 +4,6 @@ import Notes from "../data/notes";
 
 export default (props) => {
   const result = Notes.find((n1) => n1.note === props.Tonica);
-  console.log(result);
   const N = result.id;
   const octave = 3;
   return (

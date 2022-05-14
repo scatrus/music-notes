@@ -17,12 +17,24 @@ function App() {
   const [chord, setChord] = useState("M");
   const [tuner, setTuner] = useState("E");
   const [option, setOption] = useState("");
+  // const [MIDI, setMIDI] = useState("");
 
   var sub = Note.slice(0, 12);
 
   return (
     <div className="App">
       <header>
+        {/* <div>
+          <select
+            defaultValue="_tone_0250_Acoustic_Guitar_sf2_file"
+            name="MIDI"
+            id="setMIDI"
+            onChange={(e) => setMIDI(e.target.value) + console.log(MIDI)}
+          >
+            <option value="_tone_0250_Acoustic_Guitar_sf2_file">Violão</option>
+            <option value="_tone_0010_SBLive_sf2_file">Piano</option>
+          </select>
+        </div> */}
         <div className="option">
           <button
             className="tuner"

@@ -17,6 +17,7 @@
     <script src="https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js"></script>
     <script src="https://surikov.github.io/webaudiofontdata/sound/0250_Acoustic_Guitar_sf2_file.js"></script>
     <script src="https://surikov.github.io/webaudiofontdata/sound/0010_SBLive_sf2.js"></script>
+    <script src="https://surikov.github.io/webaudiofontdata/sound/0240_FluidR3_GM_sf2_file.js"></script>
 
     <script>
       var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
@@ -24,7 +25,7 @@
       var player = new WebAudioFontPlayer();
       player.loader.decodeAfterLoading(
         audioContext,
-        "_tone_0250_Acoustic_Guitar_sf2_file"
+        "_tone_0240_FluidR3_GM_sf2_file"
       );
 
       function playKey(idnote, octave) {
@@ -32,7 +33,7 @@
         player.queueWaveTable(
           audioContext,
           audioContext.destination,
-          _tone_0250_Acoustic_Guitar_sf2_file,
+          _tone_0240_FluidR3_GM_sf2_file,
           1,
           pitch,
           1000

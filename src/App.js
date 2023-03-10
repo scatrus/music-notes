@@ -9,7 +9,7 @@ import Scale from "./components/Scale";
 import ResultChord from "./components/ResultChord";
 import ResultScale from "./components/ResultScale";
 import ResultTuner from "./components/ResultTuner";
-import OnlineTuner from "./components/OnlineTuner";
+// import OnlineTuner from "./components/OnlineTuner";
 
 function App() {
   const [note, setNote] = useState("C");
@@ -140,7 +140,7 @@ function App() {
           <Selected Tonica={note} note={selectedNote} tuner={tuner} />
           <ResultTuner tuner={tuner} note={sub} />
           <hr />
-          <OnlineTuner />
+          {/*<OnlineTuner />*/}
         </>
       ) : (
         <></>

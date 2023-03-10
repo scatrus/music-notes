@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default (props) =>
+const tuner =  (props) =>(
 
     <div className="tuner">
         <button onClick={(e) => props.setTuner(e.target.value)} value="E">Violão - E</button>
         <button onClick={(e) => props.setTuner(e.target.value)} value="D">Violão - D</button>
-    </div>
+    </div>);
+export default tuner;
+
     

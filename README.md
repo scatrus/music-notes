@@ -39,6 +39,13 @@ npm install
 npm run dev
 # ou
 npm start
+```
+
+## Prévias
 
 ![Preview](https://github.com/user-attachments/assets/d2b2e769-1adb-4041-abee-fe27835abf4a)
+
+![Preview](https://github.com/user-attachments/assets/70ff8059-4d31-4640-b337-81a2efc3dd57)
+
+![Preview](https://github.com/user-attachments/assets/626e0f0f-fa84-453d-8edf-a4a5fe1bb787)
 

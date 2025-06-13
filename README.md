@@ -1,71 +1,44 @@
-https://musical-notes.netlify.app/
+# 🎵 Musical Notes
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+🔗 [Acesse o site](https://musical-notes.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Visão Geral
 
-## Available Scripts
+**Musical Notes** é uma aplicação web interativa para explorar notas musicais e escalas. Ideal para músicos, estudantes e entusiastas que desejam aprender teoria musical de forma visual e intuitiva.
 
-In the project directory, you can run:
+## ✨ Funcionalidades
 
-### `npm start`
+- 🎼 Visualização gráfica de notas em escalas musicais
+- 🎹 Botões interativos com som (clique com o mouse)
+- 🔁 Seleção de modos e tonalidades (maior, menor, pentatônica, etc.)
+- 🧠 Ferramentas para estudo e prática musical
+- 📱 Interface responsiva e acessível via navegador
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Demonstração ao Vivo
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+🔗 https://musical-notes.netlify.app/
 
-### `npm test`
+## 🛠 Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML5 e CSS3
+- JavaScript
+- Deploy: [Netlify](https://www.netlify.com/)
 
-### `npm run build`
+## 📦 Como Rodar Localmente
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone o repositório
+git clone https://github.com/scatrus/musical-notes.git
+cd musical-notes
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Instale as dependências (se houver)
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Rode o projeto
+npm run dev
+# ou
+npm start
 
-### `npm run eject`
+![Preview](https://github.com/user-attachments/assets/d2b2e769-1adb-4041-abee-fe27835abf4a)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
